@@ -22,9 +22,14 @@ Complexity Analysis
 Contents
 --------
 The project01 directory contains the following files:
-* *file1* - brief description here
-* *file2* - brief description here
-* *file3* - brief description here
+* *Node.h* - brief description here
+* *Node.cpp* - brief description here
+* *LinkedList.h* - brief description here
+* *LinkedList.cpp* - brief description here
+* *BinomialTree.h* - brief description here
+* *BinomialTree.cpp* - brief description here
+* *BinomialHeap.h* - brief description here
+* *BinomialHeap.cpp* - brief description here
 
 References
 ----------

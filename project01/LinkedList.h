@@ -4,6 +4,8 @@
 #define LLIST
 
 #include "Node.h"
+#include <iostream>
+using namespace std;
 
 class LinkedList {
 
@@ -17,4 +19,5 @@ public:
 
     void insert(Node*);
     int get_min();
+    void print();
 };

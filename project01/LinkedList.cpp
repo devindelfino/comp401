@@ -43,3 +43,18 @@ int LinkedList::get_min() {
 		return min;
 	}
 }
+
+void LinkedList::print() {
+	if(this->head == NULL) {
+		cout << "[ ]" << endl;
+	}
+	else {
+		Node* temp_node = this->head;
+		cout << "[ ";
+		while(temp_node != NULL) {
+			cout << temp_node->get_key() << " ";
+			temp_node = temp_node->right_sibling;
+		}
+		cout << "]" << endl;
+	}
+}
