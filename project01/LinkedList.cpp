@@ -45,6 +45,10 @@ int LinkedList::get_min() {
 	}
 }
 
+int LinkedList::get_size() {
+	return this->size;
+}
+
 void LinkedList::print() {
 	if(this->head == NULL) {
 		cout << "[ ]" << endl;

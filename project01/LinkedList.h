@@ -19,6 +19,7 @@ public:
 
     void insert(Node*);
     int get_min();
+    int get_size();
     void print();
 };
 

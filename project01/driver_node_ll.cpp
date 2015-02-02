@@ -22,5 +22,6 @@ int main() {
 	n2->print();
 	n3->print();
 
+	cout << LL.get_min() << endl;
 	return 0;
 }
