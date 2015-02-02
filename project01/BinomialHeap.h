@@ -10,6 +10,8 @@ public:
 	BinomialHeap();
 	~BinomialHeap();
 
-	
+
 
 };
+
+#endif

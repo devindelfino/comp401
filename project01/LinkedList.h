@@ -3,12 +3,12 @@
 #ifndef LLIST
 #define LLIST
 
-#include "Node.h"
 #include <iostream>
 using namespace std;
 
-class LinkedList {
+class Node; // forward declaration of Node to use in LinkedList()
 
+class LinkedList {
 private:
 	Node* head;
 	int size;
@@ -21,3 +21,5 @@ public:
     int get_min();
     void print();
 };
+
+#endif

@@ -1,7 +1,8 @@
 // LinkedList.cpp
 
 #include "LinkedList.h"
-
+#include "Node.h"
+// -----------------------------------------------------------------------------------------------
 LinkedList::LinkedList() {
 	this->head = NULL;
 	this->size = 0;
@@ -27,7 +28,7 @@ void LinkedList::insert(Node* new_node) {
 
 int LinkedList::get_min() {
 
-	int min = 9999999999;
+	int min = 999999;
 
 	if(this->head == NULL) {
 		return min;
@@ -35,8 +36,8 @@ int LinkedList::get_min() {
 	else {
 		Node* temp_node = this->head;
 		while(temp_node != NULL) {
-			if(temp_node->key <= min) {
-				min = temp_node->key;
+			if(temp_node->get_key() <= min) {
+				min = temp_node->get_key();
 			}
 			temp_node = temp_node->right_sibling;
 		}
@@ -58,3 +59,4 @@ void LinkedList::print() {
 		cout << "]" << endl;
 	}
 }
+// -----------------------------------------------------------------------------------------------
