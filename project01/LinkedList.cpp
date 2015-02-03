@@ -36,36 +36,46 @@ void LinkedList::insert(Node* new_node) {
 		}
 		else if(new_node->get_rank() == this->head->get_rank()) {
 			//merge and reassign head
+			
+			this->update_size();
 		}
 		else {
-			Node* current_node = this->head;
+			Node* current_node = this->head->right_sibling;
 			Node* prev_node = this->head;
+			bool inserted = false;
+
 			while(current_node != NULL) {
 				if(new_node->get_rank() > current_node->get_rank()) {
-					
+					prev_node = current_node;
+					current_node = current_node->right_sibling;
 				}
-				else {	// new_node->get_rank() == current_node->get_rank()
+				else if(new_node->get_rank() < current_node->get_rank()) {
+					new_node->right_sibling = prev_node->right_sibling;
+					prev_node->right_sibling = new_node;
+					inserted = true;
+					this->size += 1;
+				}
+				else { // new_node->get_key() == current_node->get_key()
+					//merge
+					if(new_node->get_key() < current_node->get_key()) {
+						new_node->right_sibling = current_node->right_sibling;
+						prev_node->right_sibling = new_node;
+						new_node->add_child(current_node);
+					}
+					else {	// new_node->get_key() >= current_node->get_key()
+						current_node->add_child(new_node);
 
+					}
+					inserted = true;
+					this->update_size();
 				}
 			}
-		}
-
-
-
-		new_node->right_sibling = this->head;
-		this->head = new_node;
-
-		Node* temp_node = this->head;
-		while(temp_node != NULL) {
-			if(temp_node->get_rank() == temp_node->right_sibling->get_rank()) {
-				//merge
-				if(new_node->get_key() <= new_node->right_sibling->get_key()) {
-					new_node->add_child(new_node->right_sibling);
-				}
+			if(!inserted) {
+				prev_node->right_sibling = new_node;
+				this->size += 1;
 			}
 		}
 	}
-	this->size += 1;
 }
 
 int LinkedList::get_min() {
@@ -104,5 +114,20 @@ void LinkedList::print() {
 		}
 		cout << "]" << endl;
 	}
+}
+
+void LinkedList::update_size() {
+	int new_size = 0;
+	if(this->head == NULL) {
+		break;
+	}
+	else {
+		Node* temp_node = this->head;
+		while(temp_node != NULL) {
+			new_size += 1;
+			temp_node = temp_node->right_sibling;
+		}
+	}
+	this->size = new_size;
 }
 // -----------------------------------------------------------------------------------------------

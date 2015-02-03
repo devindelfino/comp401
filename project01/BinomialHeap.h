@@ -17,7 +17,7 @@ public:
 	LinkedList root_list;
 
 	// methods
-	void insert(Node*);
+	void insert(int);
 	void join(BinomialHeap);
 	Node* delete_min();
 	bool is_empty();
