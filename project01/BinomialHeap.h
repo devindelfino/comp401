@@ -24,6 +24,7 @@ public:
 	void load_data(string);
 	int find_min();
 	int get_size();
+	void merge(Node*, Node*);
 };
 
 #endif

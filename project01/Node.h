@@ -24,7 +24,8 @@ public:
 	void set_right_sibling(Node*);
 	void print();
 
-	Node* right_sibling;	// used when nodes are part of the double linked list of roots
+	Node* parent;
+	Node* right_sibling;	// used when nodes are part of the linked list of roots
 	LinkedList children;
 
 	// ---------- To customize class, add additional parameters here (step 2/5) ----------------------

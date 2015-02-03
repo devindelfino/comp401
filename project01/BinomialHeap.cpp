@@ -23,6 +23,8 @@ void BinomialHeap::insert(int key) {
 }
 
 void BinomialHeap::join(BinomialHeap b_heap) {
+	Node* b_heap_it = b_heap.head;
+	
 
 	this->size += b_heap.get_size();
 }

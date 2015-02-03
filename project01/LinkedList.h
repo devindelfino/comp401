@@ -10,13 +10,12 @@ class Node; // forward declaration of Node to use in LinkedList()
 
 class LinkedList {
 private:
-	Node* head;
 	int size;
-
 public:
     LinkedList();
     ~LinkedList();
 
+	Node* head;
     void insert(Node*);
     int get_min();
     int get_size();

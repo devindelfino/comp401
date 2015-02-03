@@ -5,6 +5,7 @@
 Node::Node(int new_key) {
 	this->key = new_key;
 	this->right_sibling = NULL;
+	this->parent = NULL;
 
 	// below, add assignments that can alter according to the specific implementation
 
