@@ -26,6 +26,7 @@ void LinkedList::insert(Node* new_node) {
 
 	if(this->head == NULL) {
 		this->head = new_node;
+		this->size += 1;
 	}
 	else {
 		// check new node against the head of the linked list
@@ -33,11 +34,14 @@ void LinkedList::insert(Node* new_node) {
 			new_node->right_sibling = this->head;
 			this->head = new_node;
 			this->size += 1;
+
 		}
 		else if(new_node->get_rank() == this->head->get_rank()) {
-			//merge and reassign head
-			
-			this->update_size();
+			if(new_node->get_key() < this->head->get_key()) {
+				new_node->right_sibling = this->head;
+				this->head = new_node;
+			}
+			this->merge(this->head);
 		}
 		else {
 			Node* current_node = this->head->right_sibling;
@@ -49,26 +53,14 @@ void LinkedList::insert(Node* new_node) {
 					prev_node = current_node;
 					current_node = current_node->right_sibling;
 				}
-				else if(new_node->get_rank() < current_node->get_rank()) {
+				else { //(new_node->get_rank() <= current_node->get_rank())
 					new_node->right_sibling = prev_node->right_sibling;
 					prev_node->right_sibling = new_node;
 					inserted = true;
-					this->size += 1;
+					this->merge(prev_node);
+					break;
 				}
-				else { // new_node->get_key() == current_node->get_key()
-					//merge
-					if(new_node->get_key() < current_node->get_key()) {
-						new_node->right_sibling = current_node->right_sibling;
-						prev_node->right_sibling = new_node;
-						new_node->add_child(current_node);
-					}
-					else {	// new_node->get_key() >= current_node->get_key()
-						current_node->add_child(new_node);
 
-					}
-					inserted = true;
-					this->update_size();
-				}
 			}
 			if(!inserted) {
 				prev_node->right_sibling = new_node;
@@ -76,6 +68,37 @@ void LinkedList::insert(Node* new_node) {
 			}
 		}
 	}
+}
+
+void LinkedList::merge(Node* start) {
+	Node* prev_node = start;
+	Node* current_node = prev_node->right_sibling;
+	Node* next_node = NULL;
+	while(current_node->right_sibling != NULL) {
+		next_node = current_node->right_sibling;
+		if(current_node->get_rank() == next_node->get_rank()) {
+
+			if(current_node->get_key() < next_node->get_key()) {
+				current_node->right_sibling = next_node->right_sibling;
+				current_node->add_child(next_node);
+
+				// prev_node = prev_node;
+				// current_node = current_node;
+			}
+			else { // current_node->get_key() >= next_node->get_key()
+				prev_node->right_sibling = next_node;
+				next_node->add_child(current_node);
+
+				// prev_node = prev_node;
+				current_node = next_node;
+			}
+		}
+		else {
+			prev_node = current_node;
+			current_node = current_node->right_sibling;
+		}
+	}
+	this->update_size();
 }
 
 int LinkedList::get_min() {
@@ -119,7 +142,7 @@ void LinkedList::print() {
 void LinkedList::update_size() {
 	int new_size = 0;
 	if(this->head == NULL) {
-		break;
+		//
 	}
 	else {
 		Node* temp_node = this->head;

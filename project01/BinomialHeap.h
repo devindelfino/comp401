@@ -12,6 +12,7 @@ private:
 public:
 	BinomialHeap();
 	BinomialHeap(int);
+	BinomialHeap(LinkedList);
 	~BinomialHeap();
 
 	LinkedList root_list;
