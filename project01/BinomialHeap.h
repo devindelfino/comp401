@@ -5,20 +5,23 @@
 
 #include "Node.h"
 #include "LinkedList.h"
+#include <iostream>
+using namespace std;
 
 class BinomialHeap {
 private:
 	int size;
+	void print_out(Node*);
 public:
 	BinomialHeap();
-	BinomialHeap(int);
+	BinomialHeap(Node*);
 	BinomialHeap(LinkedList);
 	~BinomialHeap();
 
 	LinkedList root_list;
 
 	// methods
-	void insert(int);
+	void insert(Node*);
 	void join(BinomialHeap);
 	Node* delete_min();
 	bool is_empty();
@@ -26,6 +29,7 @@ public:
 	int find_min();
 	int get_size();
 	void merge(Node*, Node*);
+	void display();
 };
 
 #endif

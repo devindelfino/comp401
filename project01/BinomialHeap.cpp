@@ -6,7 +6,7 @@ BinomialHeap::BinomialHeap() {
 
 }
 
-BinomialHeap::BinomialHeap(int new_node) {
+BinomialHeap::BinomialHeap(Node* new_node) {
 	this->root_list.insert(new_node);
 }
 
@@ -14,17 +14,25 @@ BinomialHeap::~BinomialHeap() {
 	//
 }
 
-void BinomialHeap::insert(int new_node) {
+void BinomialHeap::insert(Node* new_node) {
+	cout << "entering BH::insert" << endl;
 	BinomialHeap temp_heap = BinomialHeap(new_node);
 	this->join(temp_heap);
+	cout << "exiting BH::insert" << endl;
 }
 
 void BinomialHeap::join(BinomialHeap b_heap) {
+	cout << "entering BH::join" << endl;
 	Node* temp_node = b_heap.root_list.head;
-	while(temp_node != NULL) {
+	Node* iterator = b_heap.root_list.head;
+	// temp_node->print();
+	while(iterator != NULL) {
+		temp_node = iterator;
+		iterator = iterator->right_sibling;
+		cout << "boom" << endl;
 		this->root_list.insert(temp_node);
-		temp_node = temp_node->right_sibling;
 	}
+	cout << "exiting BH::join" << endl;
 }
 
 // Node* BinomialHeap::delete_min() {      need to deal with head pointer
@@ -60,3 +68,30 @@ void BinomialHeap::load_data(string file_name) {
 int BinomialHeap::find_min() {
 	return this->root_list.get_min();
 }
+
+void BinomialHeap::display() {
+	cout << "==========================================" << endl;
+	cout << "Root List: ";
+	this->root_list.print();
+	cout << endl;
+
+	Node* temp_node = this->root_list.head;
+	while(temp_node != NULL) {
+		this->print_out(temp_node);
+		temp_node = temp_node->right_sibling;
+	}
+	cout << "==========================================" << endl;
+}
+
+void BinomialHeap::print_out(Node* n) {
+	cout << "--------------------------------------------" << endl;
+	n->print();
+
+	Node* temp_node = n->children.head;
+	while(temp_node != NULL) {
+		this->print_out(temp_node);
+		temp_node = temp_node->right_sibling;
+	}
+	cout << "--------------------------------------------" << endl;
+}
+

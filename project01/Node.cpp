@@ -12,7 +12,7 @@ Node::Node(int new_key) {
 }
 
 Node::~Node() {
-	delete this->right_sibling;
+	// delete this->right_sibling;
 }
 
 int Node::get_key() {

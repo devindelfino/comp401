@@ -20,7 +20,7 @@ public:
     int get_min();
     int get_size();
     void update_size();
-    void merge(Node*);
+    void merge();
     void print();
 };
 
