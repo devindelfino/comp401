@@ -6,6 +6,7 @@
 #include "Node.h"
 #include "LinkedList.h"
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 class BinomialHeap {
@@ -25,6 +26,7 @@ public:
 
 	// main Binomial Heap operations
 	void insert(Node*);
+	void insert(int);
 	void join(BinomialHeap);
 	bool is_empty();
 	int find_min();

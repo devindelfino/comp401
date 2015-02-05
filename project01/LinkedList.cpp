@@ -14,7 +14,7 @@ LinkedList::~LinkedList() {
 
 void LinkedList::insert_root(Node* new_node) {
 	new_node->parent = NULL;
-	cout << "entering node with key " << new_node->get_key() << endl;
+	new_node->right_sibling = NULL;
 	if(this->head == NULL) {
 		this->head = new_node;
 		this->size += 1;
@@ -79,7 +79,6 @@ void LinkedList::merge() {
 	Node* next_node = NULL;
 
 	while(this->head->right_sibling != NULL && this->head->get_rank() == this->head->right_sibling->get_rank()) {
-		cout << "while 1" << endl;
 		current_node = this->head;
 		next_node = this->head->right_sibling;
 		if(current_node->get_key() <= next_node->get_key()) {
@@ -100,7 +99,6 @@ void LinkedList::merge() {
 		current_node = this->head->right_sibling;
 
 		while(current_node->right_sibling != NULL) {
-			cout << "while 2" << endl;
 			next_node = current_node->right_sibling;
 			if(current_node->get_rank() == next_node->get_rank()) {
 

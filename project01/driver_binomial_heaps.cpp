@@ -3,6 +3,10 @@
 #include "BinomialHeap.h"
 
 int main() {
+	cout << "---------------------------------------------------" << endl;
+	cout << "BASIC PROGRESSION AS 10 INTEGERS ARE INSERTED" << endl;
+	cout << "---------------------------------------------------" << endl;
+
 	Node* node1 = new Node(10);
 	Node* node2 = new Node(5);
 	Node* node3 = new Node(7);
@@ -44,6 +48,11 @@ int main() {
 	heap_1.insert(nodea);
 	heap_1.display();
 
+
+	cout << "---------------------------------------------------" << endl;
+	cout << "SEARCHING FOR KEYS" << endl;
+	cout << "---------------------------------------------------" << endl;
+
 	int query = 10;
 	Node* found = heap_1.search(query);
 	if(found == NULL) {
@@ -73,5 +82,28 @@ int main() {
 		cout << query << " found!" << endl;
 		found->print();
 	}
+
+
+	cout << "---------------------------------------------------" << endl;
+	cout << "CREATING BINOMIAL HEAP FROM TEXT FILE" << endl;
+	cout << "---------------------------------------------------" << endl;
+
+	BinomialHeap heap_from_file = BinomialHeap();
+	heap_from_file.load_data("./data/data10.dat");
+
+	heap_from_file.display();
+
+	cout << "---------------------------------------------------" << endl;
+	cout << "DELETING MINIMUM NODE" << endl;
+	cout << "---------------------------------------------------" << endl;
+
+	heap_from_file.delete_min();
+	heap_from_file.display();
+	heap_from_file.delete_min();
+	heap_from_file.display();
+	heap_from_file.delete_min();
+	heap_from_file.display();
+	heap_from_file.delete_min();
+	heap_from_file.display();
 	return 0;
 }

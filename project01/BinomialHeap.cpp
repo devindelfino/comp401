@@ -15,26 +15,28 @@ BinomialHeap::~BinomialHeap() {
 }
 
 void BinomialHeap::insert(Node* new_node) {
-	cout << "entering BH::insert" << endl;
 	new_node->parent = NULL;
 	new_node->right_sibling = NULL;
 	BinomialHeap temp_heap = BinomialHeap(new_node);
 	this->join(temp_heap);
-	cout << "exiting BH::insert" << endl;
+}
+
+void BinomialHeap::insert(int key) {
+	Node* new_node = new Node(key);
+	BinomialHeap temp_heap = BinomialHeap(new_node);
+	this->join(temp_heap);
 }
 
 void BinomialHeap::join(BinomialHeap b_heap) {
-	cout << "entering BH::join" << endl;
 	Node* temp_node = NULL;
 	Node* iterator = b_heap.root_list.head;
 	// temp_node->print();
 	while(iterator != NULL) {
 		temp_node = iterator;
 		iterator = iterator->right_sibling;
-		cout << "boom" << endl;
 		this->root_list.insert_root(temp_node);
+		this->display();
 	}
-	cout << "exiting BH::join" << endl;
 }
 
 Node* BinomialHeap::delete_min() {
@@ -74,9 +76,13 @@ Node* BinomialHeap::delete_min() {
 		merge_heap.insert(temp_node);
 	}
 
+	cout << "merged heap from children" <<endl;
+	merge_heap.display();
 	// join the original heap with the new merge_heap containing the children of the deleted node
 	this->join(merge_heap);
-
+	cout << "Deleting Node: ";
+	deleted_node->print();
+	cout << endl;
 	return deleted_node;
 }
 
@@ -90,7 +96,18 @@ bool BinomialHeap::is_empty() {
 }
 
 void BinomialHeap::load_data(string file_name) {
-	
+	ifstream fin;
+
+	fin.open(file_name);
+
+	int new_key;
+	while(!fin.eof()) {
+		fin >> new_key;
+		this->insert(new_key);
+		cout << new_key << " inserted" <<endl;
+	}
+
+	fin.close();
 }
 
 int BinomialHeap::find_min() {

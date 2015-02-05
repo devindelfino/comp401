@@ -2,8 +2,17 @@ Project 01: Binomial Heap
 ==========================
 *Devin Delfino*
 
+Running the program
+-------------------
+To compile code...
+	make BinomialHeap
+
+To run executable...
+	./BinomialHeap
+
 Description
 -----------
+
 
 Documentation
 -------------
