@@ -19,6 +19,7 @@ public:
 
 	//void change_key();
 	int get_key();
+	void update_key(int);
 	int get_rank();
 	void add_child(Node*);
 	void set_right_sibling(Node*);

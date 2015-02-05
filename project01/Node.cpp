@@ -28,6 +28,7 @@ void Node::set_right_sibling(Node* right) {
 }
 
 void Node::add_child(Node* new_node) {
+	new_node->parent = this;
 	this->children.insert_child(new_node);
 	this->rank += 1;
 }
@@ -37,4 +38,9 @@ void Node::print() {
 	this->children.print();
 	cout << endl;
 }
+
+void Node::update_key(int new_key) {
+	this->key = new_key;
+}
+
 // -----------------------------------------------------------------------------------------------

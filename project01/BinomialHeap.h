@@ -12,24 +12,31 @@ class BinomialHeap {
 private:
 	int size;
 	void print_out(Node*);
+	Node* search_subtree(int, Node*);
 public:
+	// datamembers
+	LinkedList root_list;
+
+	// constructors/destructors
 	BinomialHeap();
 	BinomialHeap(Node*);
 	BinomialHeap(LinkedList);
 	~BinomialHeap();
 
-	LinkedList root_list;
-
-	// methods
+	// main Binomial Heap operations
 	void insert(Node*);
 	void join(BinomialHeap);
-	Node* delete_min();
 	bool is_empty();
-	void load_data(string);
 	int find_min();
+	Node* delete_min();
+	void decrease_key(Node*, int);
+	// Node* delete(Node*);
+
+	// helper methods
+	void load_data(string);
 	int get_size();
-	void merge(Node*, Node*);
 	void display();
+	Node* search(int);
 };
 
 #endif

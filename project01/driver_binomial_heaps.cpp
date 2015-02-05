@@ -44,6 +44,34 @@ int main() {
 	heap_1.insert(nodea);
 	heap_1.display();
 
-	
+	int query = 10;
+	Node* found = heap_1.search(query);
+	if(found == NULL) {
+		cout << query << " not found." << endl;
+	}
+	else {
+		cout << query << " found!" << endl;
+		found->print();
+	}
+
+	query = 16;
+	found = heap_1.search(query);
+	if(found == NULL) {
+		cout << query << " not found." << endl;
+	}
+	else {
+		cout << query << " found!" << endl;
+		found->print();
+	}
+
+	query = 4;
+	found = heap_1.search(query);
+	if(found == NULL) {
+		cout << query << " not found." << endl;
+	}
+	else {
+		cout << query << " found!" << endl;
+		found->print();
+	}
 	return 0;
 }
