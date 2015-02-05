@@ -12,17 +12,8 @@ LinkedList::~LinkedList() {
 	// delete this->head;
 }
 
-void LinkedList::insert(Node* new_node) {
-	// if(this->head == NULL) {
-	// 	this->head = new_node;
-	// }
-	// else {
-	// 	Node* temp_node = this->head;
-	// 	while(temp_node->right_sibling != NULL) {
-	// 		temp_node = temp_node->right_sibling;
-	// 	}
-	// 	temp_node->right_sibling = new_node;
-	// }
+void LinkedList::insert_root(Node* new_node) {
+	
 	cout << "entering node with key " << new_node->get_key() << endl;
 	if(this->head == NULL) {
 		this->head = new_node;
@@ -61,8 +52,25 @@ void LinkedList::insert(Node* new_node) {
 				this->size += 1;
 			}
 		}
+		this->print();
+		cout << "merging" << endl;
 		this->merge();
 	}
+}
+
+void LinkedList::insert_child(Node* new_node) {
+
+	if(this->head == NULL) {
+		this->head = new_node;
+		this->head->right_sibling = NULL;
+		this->size += 1;
+	}
+	else {
+		new_node->right_sibling = this->head;
+		this->head = new_node;
+		this->size += 1;
+	}
+	this->merge();
 }
 
 void LinkedList::merge() {
@@ -82,6 +90,7 @@ void LinkedList::merge() {
 			this->head = next_node;
 			next_node->add_child(current_node);
 		}
+
 	}
 
 	if(this->head->right_sibling != NULL) {

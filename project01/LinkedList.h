@@ -16,7 +16,8 @@ public:
     ~LinkedList();
 
 	Node* head;
-    void insert(Node*);
+    void insert_root(Node*);
+    void insert_child(Node*);
     int get_min();
     int get_size();
     void update_size();

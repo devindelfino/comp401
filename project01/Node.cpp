@@ -28,7 +28,7 @@ void Node::set_right_sibling(Node* right) {
 }
 
 void Node::add_child(Node* new_node) {
-	this->children.insert(new_node);
+	this->children.insert_child(new_node);
 	this->rank += 1;
 }
 

@@ -7,7 +7,7 @@ BinomialHeap::BinomialHeap() {
 }
 
 BinomialHeap::BinomialHeap(Node* new_node) {
-	this->root_list.insert(new_node);
+	this->root_list.insert_child(new_node);
 }
 
 BinomialHeap::~BinomialHeap() {
@@ -30,7 +30,7 @@ void BinomialHeap::join(BinomialHeap b_heap) {
 		temp_node = iterator;
 		iterator = iterator->right_sibling;
 		cout << "boom" << endl;
-		this->root_list.insert(temp_node);
+		this->root_list.insert_root(temp_node);
 	}
 	cout << "exiting BH::join" << endl;
 }
@@ -77,6 +77,7 @@ void BinomialHeap::display() {
 
 	Node* temp_node = this->root_list.head;
 	while(temp_node != NULL) {
+		cout << "==========================================" << endl;
 		this->print_out(temp_node);
 		temp_node = temp_node->right_sibling;
 	}
