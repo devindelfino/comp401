@@ -5,9 +5,11 @@ Project 01: Binomial Heap
 Running the program
 -------------------
 To compile code...
+
 	make BinomialHeap
 
 To run executable...
+
 	./BinomialHeap
 
 Description
