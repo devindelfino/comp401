@@ -32,7 +32,7 @@ public:
 	int find_min();
 	Node* delete_min();
 	void decrease_key(Node*, int);
-	// Node* delete(Node*);
+	void delete_node(Node*);
 
 	// helper methods
 	void load_data(string);

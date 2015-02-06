@@ -1,4 +1,4 @@
-// driver_binomial_heaps.cpp
+// driver.cpp
 
 #include "BinomialHeap.h"
 
@@ -53,7 +53,7 @@ int main() {
 	cout << "SEARCHING FOR KEYS" << endl;
 	cout << "---------------------------------------------------" << endl;
 
-	int query = 10;
+	int query = 67;
 	Node* found = heap_1.search(query);
 	if(found == NULL) {
 		cout << query << " not found." << endl;
@@ -63,7 +63,7 @@ int main() {
 		found->print();
 	}
 
-	query = 16;
+	query = 7;
 	found = heap_1.search(query);
 	if(found == NULL) {
 		cout << query << " not found." << endl;
@@ -73,16 +73,19 @@ int main() {
 		found->print();
 	}
 
-	query = 4;
-	found = heap_1.search(query);
-	if(found == NULL) {
-		cout << query << " not found." << endl;
-	}
-	else {
-		cout << query << " found!" << endl;
-		found->print();
-	}
+	cout << "---------------------------------------------------" << endl;
+	cout << "DECREASING A KEY" << endl;
+	cout << "---------------------------------------------------" << endl;
 
+	heap_1.decrease_key(found, 3);
+	heap_1.display();
+
+	cout << "---------------------------------------------------" << endl;
+	cout << "DELETING A NODE" << endl;
+	cout << "---------------------------------------------------" << endl;
+
+	Node* node_to_delete = heap_1.search(5);
+	heap_1.delete_node(node_to_delete);
 
 	cout << "---------------------------------------------------" << endl;
 	cout << "CREATING BINOMIAL HEAP FROM TEXT FILE" << endl;
@@ -105,5 +108,6 @@ int main() {
 	heap_from_file.display();
 	heap_from_file.delete_min();
 	heap_from_file.display();
+
 	return 0;
 }

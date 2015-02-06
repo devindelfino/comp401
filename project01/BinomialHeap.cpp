@@ -35,7 +35,6 @@ void BinomialHeap::join(BinomialHeap b_heap) {
 		temp_node = iterator;
 		iterator = iterator->right_sibling;
 		this->root_list.insert_root(temp_node);
-		this->display();
 	}
 }
 
@@ -142,15 +141,19 @@ void BinomialHeap::print_out(Node* n) {
 }
 
 void BinomialHeap::decrease_key(Node* handle, int new_key) {
-	handle->update_key(new_key);
 
-	//handle restructuring of heap
+	cout << "Decreasing Key of node ";
+	handle->print();
+	cout << " from " << handle->get_key() << " to " << new_key << endl;
+	handle->update_key(new_key);
 }
 
-// Node* BinomialHeap::delete(Node* handle) {
-// 	this->decrease_key(handle, -999999);
-// 	this->delete_min();
-// }
+void BinomialHeap::delete_node(Node* handle) {
+	cout << "Deleting node ";
+	handle->print();
+	this->decrease_key(handle, -999999);
+	this->delete_min();
+}
 
 Node* BinomialHeap::search(int key_query) {
 	Node* handle = NULL;

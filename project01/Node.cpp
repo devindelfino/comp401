@@ -40,7 +40,17 @@ void Node::print() {
 }
 
 void Node::update_key(int new_key) {
+	// update key
 	this->key = new_key;
+
+	// retain heap-ordering property where children keys are always greater than or equal to its parent key
+
+	if(this->parent != NULL) {
+		if(this->get_key() < this->parent->get_key()) {
+			this->key = this->parent->get_key();
+			this->parent->update_key(new_key);
+		}
+	}
 }
 
 // -----------------------------------------------------------------------------------------------
