@@ -11,12 +11,12 @@ using namespace std;
 
 class BinomialHeap {
 private:
-	int size;
-	void print_out(Node*);
-	Node* search_subtree(int, Node*);
+	int size_;
+	void PrintOut(Node*);
+	Node* SearchSubTree(int, Node*);
 public:
 	// datamembers
-	LinkedList root_list;
+	LinkedList root_list_;
 
 	// constructors/destructors
 	BinomialHeap();
@@ -25,20 +25,20 @@ public:
 	~BinomialHeap();
 
 	// main Binomial Heap operations
-	void insert(Node*);
-	void insert(int);
-	void join(BinomialHeap);
-	bool is_empty();
-	int find_min();
-	Node* delete_min();
-	void decrease_key(Node*, int);
-	void delete_node(Node*);
+	void Insert(Node*);
+	void Insert(int);
+	void Join(BinomialHeap);
+	bool IsEmpty();
+	int FindMinimum();
+	Node* DeleteMinimum();
+	void DecreaseKey(Node*, int);
+	void DeleteNode(Node*);
 
 	// helper methods
-	void load_data(string);
-	int get_size();
-	void display();
-	Node* search(int);
+	void LoadData(string);
+	int GetSize();
+	void Display();
+	Node* Search(int);
 };
 
 #endif
