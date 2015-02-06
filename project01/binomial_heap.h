@@ -1,13 +1,13 @@
 // BinomialHeap.h
 
-#ifndef BIN_HEAP
-#define BIN_HEAP
+#ifndef COMP401_PROJECT01_BINOMIALHEAP_H
+#define COMP401_PROJECT01_BINOMIALHEAP_H
 
-#include "Node.h"
-#include "LinkedList.h"
 #include <iostream>
 #include <fstream>
 using namespace std;
+#include "node.h"
+#include "linked_list.h"
 
 class BinomialHeap {
 private:

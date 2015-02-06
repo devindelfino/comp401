@@ -1,10 +1,10 @@
 // driver.cpp
 
-#include "BinomialHeap.h"
+#include "binomial_heap.h"
 
 int main() {
 	cout << "---------------------------------------------------" << endl;
-	cout << "BASIC PROGRESSION AS 10 INTEGERS ARE INSERTED" << endl;
+	cout << "INSERTING INTEGERS INTO A BINOMIAL HEAP (step by step)" << endl;
 	cout << "---------------------------------------------------" << endl;
 
 	Node* node1 = new Node(10);

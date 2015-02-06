@@ -1,6 +1,6 @@
 // BinomialHeap.cpp
 
-#include "BinomialHeap.h"
+#include "binomial_heap.h"
 
 BinomialHeap::BinomialHeap() {
 

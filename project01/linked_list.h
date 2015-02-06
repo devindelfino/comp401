@@ -1,7 +1,7 @@
 // LinkedList.h
 
-#ifndef LLIST
-#define LLIST
+#ifndef COMP401_PROJECT01_LINKEDLIST_H
+#define COMP401_PROJECT01_LINKEDLIST_H
 
 #include <iostream>
 using namespace std;

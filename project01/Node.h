@@ -1,11 +1,11 @@
 // Node.h
 
-#ifndef NODE
-#define NODE
+#ifndef COMP401_PROJECT01_NODE_H
+#define COMP401_PROJECT01_NODE_H
 
 #include <iostream>
 using namespace std;
-#include "LinkedList.h"
+#include "linked_list.h"
 
 class Node {
 private:

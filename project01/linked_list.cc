@@ -1,7 +1,8 @@
 // LinkedList.cpp
 
-#include "LinkedList.h"
-#include "Node.h"
+#include "linked_list.h"
+#include "node.h"
+
 // -----------------------------------------------------------------------------------------------
 LinkedList::LinkedList() {
 	this->head = NULL;
@@ -53,7 +54,7 @@ void LinkedList::insert_root(Node* new_node) {
 			}
 		}
 		this->print();
-		cout << "merging" << endl;
+		// cout << "merging" << endl;
 		this->merge();
 	}
 }
@@ -83,12 +84,10 @@ void LinkedList::merge() {
 		next_node = this->head->right_sibling;
 		if(current_node->get_key() <= next_node->get_key()) {
 			current_node->right_sibling = next_node->right_sibling;
-			// next_node->parent = current_node;
 			current_node->add_child(next_node);
 		}
 		else {	// current_node->get_key() > next_node->get_key()
 			this->head = next_node;
-			// current_node->parent = next_node;
 			next_node->add_child(current_node);
 		}
 

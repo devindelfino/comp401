@@ -1,14 +1,14 @@
-OBJECTS = driver.o BinomialHeap.o LinkedList.o Node.o
+OBJECTS = driver.o binomial_heap.o linked_list.o node.o
 
 #targets-----------------------------
-BinomialHeap:	$(OBJECTS)
-				g++ $(OBJECTS) -o BinomialHeap
+binomial_heap:	$(OBJECTS)
+				g++ $(OBJECTS) -o binomial_heap
 
 clean:
 	rm *.o
 
 #dependencies
-driver.o:	BinomialHeap.h
-BinomialHeap.o:	BinomialHeap.h
-LinkedList.o:	LinkedList.h Node.h	
-Node.o:	LinkedList.h Node.h	
+driver.o:	binomial_heap.h
+binomial_heap.o:	binomial_heap.h
+linked_list.o:	linked_list.h node.h	
+node.o:	linked_list.h node.h	
