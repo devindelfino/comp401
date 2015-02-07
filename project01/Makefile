@@ -5,7 +5,7 @@ binomial_heap:	$(OBJECTS)
 				g++ $(OBJECTS) -o binomial_heap
 
 clean:
-	rm *.o
+	rm *.o; rm binomial_heap
 
 #dependencies
 driver.o:	binomial_heap.h
