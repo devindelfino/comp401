@@ -18,6 +18,8 @@ using namespace std;
 
 class Node; // forward declaration of Node to use in LinkedList()
 
+// Contains a series of nodes that can be manipulated in various ways. 
+//      Used within the Node and BinomialHeap classes only. 
 class LinkedList {
 private:
 	int size_;

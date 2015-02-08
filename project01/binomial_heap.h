@@ -20,6 +20,10 @@ using namespace std;
 #include "node.h"
 #include "linked_list.h"
 
+// Implementation for a priority queue of integers. Sample Usage:
+// 		Node* node1 = new Node(9);
+//      BinomialHeap heap_1 = BinomialHeap(node1)
+//      heap_1.Display();
 class BinomialHeap {
 private:
 	void PrintOut(Node*);
@@ -49,5 +53,4 @@ public:
 	void Display();
 	Node* Search(int);
 };
-
 #endif

@@ -6,9 +6,10 @@
  * File Name: node.cc
  *
  * File Contents: This file contains the implementations for the constructors and methods for the Node class.
- *				  The datamembers include a key (the integer being stored), a rank (the number of children the node has),
+ *				  The datamembers include a key (the integer being stored), a rank (the number of children the node has), a parent
+ *                (node pointer to the parent node), a right_sibling (a node pointer to the next node in its linked list),
  *				  and children (a LinkedList of node pointers to child node). The methods include get_key, set_key,
- *				  get_rank, AddChild, set_right_sibling, and Print. The Node class includes a parameterized constructor only.
+ *				  get_rank, AddChild, and Print. The Node class includes a parameterized constructor only.
  */
 
 #include "node.h"
@@ -33,10 +34,6 @@ int Node::get_key() {
 
 int Node::get_rank() {
 	return this->rank_;
-}
-
-void Node::set_right_sibling(Node* right) {
-	this->right_sibling_ = right;
 }
 
 void Node::AddChild(Node* new_node) {

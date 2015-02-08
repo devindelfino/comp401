@@ -17,29 +17,26 @@
 using namespace std;
 #include "linked_list.h"
 
+// Contains an integer key and various pointers to other nodes within the BinomialHeap.
+// 		Used within the LinkedList and BinomialHeap classes only.
 class Node {
 private:
-	int key_;	 			// integer value which is used to determine the heap order property (priority)
-	int rank_;
+	int key_;		// integer value which is used to determine the min-heap order property	
+	int rank_;		// integer value indicating the number of children the node has
 public:
-	// ---- To customize class, add additional parameters to the Node() constructor (step 1/5) -------
-	Node(int);
-	// -----------------------------------------------------------------------------------------------
-	~Node();
+	Node(int);		// parameterized constructor
+	~Node();		// destructor
 
-	int get_key();
-	void set_key(int);
-	int get_rank();
-	void AddChild(Node*);
-	void set_right_sibling(Node*);
-	void Print();
+	int get_key();					// Gets the key of the node		
+	void set_key(int);				// Sets the key of the node and ensures the min-heap property is satisfied
+	int get_rank();					// Gets the rank of the node
+	void AddChild(Node*);			// Adds a child node to the LinkedList of children
+	void Print();					// Prints the node's key and the keys of its children nodes
 
-	Node* parent_;
-	Node* right_sibling_;	// used when nodes are part of the linked list of roots
-	LinkedList children_;
-
-	// ---------- To customize class, add additional parameters here (step 2/5) ----------------------
-
-	// -----------------------------------------------------------------------------------------------
+	Node* parent_;					// pointer to the parent node of this node
+									// used to maintain heap order property in set_key()
+	Node* right_sibling_;			// pointer to the next node in the linked list
+									// used when nodes are part of the linked list of roots or children
+	LinkedList children_;			// LinkedList of children nodes
 };
 #endif
