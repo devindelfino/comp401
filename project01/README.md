@@ -22,13 +22,13 @@ To utilize this code in other code:
 #####Functionality
 
 This repository contains an implementation of a Binomial Heap that stores integers. The implementation contains the following functions:
-* *insert* - Inserts a new job into the heap
-* *load_data* - Creates a Binomial Heap of integers from a text file
-* *delete_min* - Deletes the node with the minimum key
-* *decrease_key* - Decreases the key of a specific node
-* *join* - Joins a second binomial heap into an existing one
-* *is_empty* - Indicates whether or not the heap is empty
-* *find_min* - Finds the minimum key in the heap
+* *Insert* - Inserts a new job into the heap
+* *LoadData* - Creates a Binomial Heap of integers from a text file
+* *DeleteMinimum* - Deletes the node with the minimum key_
+* *DecreaseKey* - Decreases the key_ of a specific node
+* *Join* - Joins a second binomial heap into an existing one
+* *IsEmpty* - Indicates whether or not the heap is empty
+* *FindMinimum* - Finds the minimum key_ in the heap
 
 
 #####Running the program

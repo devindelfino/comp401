@@ -14,34 +14,52 @@
 #include "binomial_heap.h"
 
 BinomialHeap::BinomialHeap() {
-
+// Default constructor
+//    Parameters: None
+//    Returns: None
 }
 
 BinomialHeap::BinomialHeap(Node* new_node) {
+// Parameterized constructor
+//    Parameters: None
+//    Returns: None
 	this->root_list_.InsertRoot(new_node);
 }
 
 BinomialHeap::~BinomialHeap() {
-	//
+// Destructor
+//    Parameters: None
+//    Returns: None
 }
 
+// Main Operations ---------------------------------------------------
 void BinomialHeap::Insert(Node* new_node) {
+// Inserts a new node into the binomial heap
+// Creates a new binomial heap containing new_node and joins it into the binomial heap
+//    Parameters: new_node - pointer to the node to insert
+//    Returns: None
 	new_node->parent_ = NULL;
 	new_node->right_sibling_ = NULL;
 	BinomialHeap temp_heap = BinomialHeap(new_node);
 	this->Join(temp_heap);
 }
 
-void BinomialHeap::Insert(int key) {
-	Node* new_node = new Node(key);
+void BinomialHeap::Insert(int new_key) {
+// Inserts a new node into the binomial heap
+// Creates a new binomial heap containing a node with new_key and joins it into the binomial heap
+//    Parameters: new_key - integer key to insert into the binomial heap
+//    Returns: None
+	Node* new_node = new Node(new_key);
 	BinomialHeap temp_heap = BinomialHeap(new_node);
 	this->Join(temp_heap);
 }
 
 void BinomialHeap::Join(BinomialHeap b_heap) {
+// Joins b_heap into the current binomial heap
+//    Parameters: b_heap - a binomial heap to join into the current heap
+//    Returns: None
 	Node* temp_node = NULL;
 	Node* iterator = b_heap.root_list_.head;
-	// temp_node->Print();
 	while(iterator != NULL) {
 		temp_node = iterator;
 		iterator = iterator->right_sibling_;
@@ -50,6 +68,9 @@ void BinomialHeap::Join(BinomialHeap b_heap) {
 }
 
 Node* BinomialHeap::DeleteMinimum() {
+// Deletes the node in the binomial heap with the minimum key
+//    Parameters: None
+//    Returns: Node pointer to the deleted node
 	int min = this->FindMinimum();
 	Node* deleted_node = NULL;
 
@@ -97,6 +118,9 @@ Node* BinomialHeap::DeleteMinimum() {
 }
 
 bool BinomialHeap::IsEmpty() {
+// Determines if the binomial heap is empty or not
+//    Parameters: None
+//    Returns: boolean indicating if the binomial heap is empty
 	if(this->root_list_.head == NULL) {
 		return true;
 	}
@@ -105,7 +129,44 @@ bool BinomialHeap::IsEmpty() {
 	}
 }
 
+int BinomialHeap::FindMinimum() {
+// Finds the minimum key in the binomial heap
+// Since the binomial heap is a collection of min heap trees, the smallest key will always be the root,
+// therefore this utilizes the GetMinimum method of the LinkedList class
+//    Parameters: None
+//    Returns: the minimum integer in the binomial heap
+	return this->root_list_.GetMinimum();
+}
+
+void BinomialHeap::DecreaseKey(Node* handle, int new_key) {
+// Decreases the key of the node given by the pointer 'handle' to new_key
+// Utilizes the set_key method of the Node class
+//    Parameters: handle  - node pointer to the given node
+// 				  new_key - integer representing the new key
+//    Returns: None
+	cout << "Decreasing key of node ";
+	handle->Print();
+	cout << " from " << handle->get_key() << " to " << new_key << endl;
+	handle->set_key(new_key);
+}
+
+void BinomialHeap::DeleteNode(Node* handle) {
+// Deletes the node given by the pointer handle
+// Decreases the key of the given node to -999999 and then deletes the minimum node
+//    Parameters: handle - pointer to the node to delete
+//    Returns: None
+	cout << "Deleting node ";
+	handle->Print();
+	this->DecreaseKey(handle, -999999);
+	this->DeleteMinimum();
+}
+
+// Helper Operations -------------------------------------------------
 void BinomialHeap::LoadData(string file_name) {
+// Loads integers from a text file into a binomial heap
+// Assumes the file has one integer per line
+//    Parameters: file_name - a string representing the name of the file (with extension)
+//    Returns: None
 	ifstream fin;
 
 	fin.open(file_name);
@@ -120,11 +181,11 @@ void BinomialHeap::LoadData(string file_name) {
 	fin.close();
 }
 
-int BinomialHeap::FindMinimum() {
-	return this->root_list_.GetMinimum();
-}
-
 void BinomialHeap::Display() {
+// Displays each node in the binomial heap using the Print methods of LinkedList
+// Calls the recursive PrintOut method on each node in the root_list of the binomial heap
+//    Parameters: None
+//    Returns: None
 	cout << "==========================================" << endl;
 	cout << "Root List: ";
 	this->root_list_.Print();
@@ -140,6 +201,9 @@ void BinomialHeap::Display() {
 }
 
 void BinomialHeap::PrintOut(Node* n) {
+// Recursively prints out the node and all of its children
+//    Parameters: n - node pointer
+//    Returns: None
 	cout << "--------------------------------------------" << endl;
 	n->Print();
 
@@ -151,22 +215,11 @@ void BinomialHeap::PrintOut(Node* n) {
 	cout << "--------------------------------------------" << endl;
 }
 
-void BinomialHeap::DecreaseKey(Node* handle, int new_key) {
-
-	cout << "Decreasing key of node ";
-	handle->Print();
-	cout << " from " << handle->get_key() << " to " << new_key << endl;
-	handle->set_key(new_key);
-}
-
-void BinomialHeap::DeleteNode(Node* handle) {
-	cout << "Deleting node ";
-	handle->Print();
-	this->DecreaseKey(handle, -999999);
-	this->DeleteMinimum();
-}
-
 Node* BinomialHeap::Search(int key_query) {
+// Searches the binomial heap for a node with a key equal to key_query
+//    Parameters: key_query - integer representing the search query
+//    Returns: if key_query is found, returns node pointer to the node with the given key
+//             if key_query not found, returns NULL
 	Node* handle = NULL;
 	Node* temp_node = this->root_list_.head;
 	while(temp_node != NULL) {
@@ -182,6 +235,11 @@ Node* BinomialHeap::Search(int key_query) {
 }
 
 Node* BinomialHeap::SearchSubTree(int key_query, Node* sub_root) {
+// Recursively searches through nodes and their children
+//    Parameters: key_query - integer representing the key that is being searched for
+//                sub_root  - node pointer to the next node to search
+//    Returns: if key_query found, returns the node with said key
+//             if not found, returns NULL 
 	Node* handle = NULL;
 	if(sub_root->get_key() == key_query) {
 		handle = sub_root;

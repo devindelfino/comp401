@@ -26,31 +26,30 @@ using namespace std;
 //      heap_1.Display();
 class BinomialHeap {
 private:
-	void PrintOut(Node*);
-	Node* SearchSubTree(int, Node*);
+	void PrintOut(Node*);					// Recursively prints out subtrees within the Binomial Heap
+	Node* SearchSubTree(int, Node*);		// Recursively search through subtrees within the Binomial Heap
 public:
 	// datamembers
-	LinkedList root_list_;
+	LinkedList root_list_;					// Contains pointers to roots of each binomial tree
 
 	// constructors/destructors
-	BinomialHeap();
-	BinomialHeap(Node*);
-	~BinomialHeap();
+	BinomialHeap();							// default constructor  
+	BinomialHeap(Node*);					// parameterized constructor
+	~BinomialHeap();						// destructor
 
 	// main Binomial Heap operations
-	void Insert(Node*);
-	void Insert(int);
-	void Join(BinomialHeap);
-	bool IsEmpty();
-	int FindMinimum();
-	Node* DeleteMinimum();
-	void DecreaseKey(Node*, int);
-	void DeleteNode(Node*);
+	void Insert(Node*);						// Inserts a node into the Binomial Heap
+	void Insert(int);						// Inserts a node into the Binomial Heap
+	void Join(BinomialHeap);				// Joins two heaps into one
+	bool IsEmpty();							// Indicates whether or not the heap is empty
+	int FindMinimum();						// Finds the minimum key in the binomial heap
+	Node* DeleteMinimum();					// Deletes the node with the minimum key in the heap
+	void DecreaseKey(Node*, int);			// Decreases the key of a given node in the heap
+	void DeleteNode(Node*);					// Deletes a given node from the heap	
 
 	// helper methods
-	void LoadData(string);
-	int GetSize();
-	void Display();
-	Node* Search(int);
+	void LoadData(string);					// Loads integers from a text file into a binomial heap
+	void Display();							// Displays each node in the binomial heap
+	Node* Search(int);						// Searches the binomial heap for a given key
 };
 #endif
