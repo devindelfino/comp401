@@ -16,32 +16,45 @@
 
 // -----------------------------------------------------------------------------------------------
 LinkedList::LinkedList() {
+// Default Constructor
+// 	 Parameters: None
+//   Returns: None
 	this->head = NULL;
 	this->size_ = 0;
 }
 
 LinkedList::~LinkedList() {
-	// delete this->head;
+// Destructor
+// 	 Parameters: None
+//   Returns: None
 }
 
 void LinkedList::InsertRoot(Node* new_node) {
+// Inserts a node in a LinkedList. Its placement depends on its rank (insersion sort by rank)
+// 	 Parameters: new_node - pointer to the node to be added to the root list
+//   Returns: None
 	new_node->parent_ = NULL;
 	new_node->right_sibling_ = NULL;
+	// simply insert if the list is empty
 	if(this->head == NULL) {
 		this->head = new_node;
 		this->size_ += 1;
 	}
+	// if the list is NOT empty
 	else {
-		// check new node against the head of the linked list
+		// insert at head of list if the rank is less than the current head's rank
 		if(new_node->get_rank() < this->head->get_rank()) {
 			new_node->right_sibling_ = this->head;
 			this->head = new_node;
 			this->size_ += 1;
 		}
+		// if the new node has the same rank as the current head and has a smaller key
+		// insert the new node at the head of the list
 		else if((new_node->get_rank() == this->head->get_rank()) && (new_node->get_key() < this->head->get_key())) {
 			new_node->right_sibling_ = this->head;
 			this->head = new_node;
 		}
+		// if the new node's rank is greater than or equal to the head node's rank
 		else {
 			Node* current_node = this->head->right_sibling_;
 			Node* prev_node = this->head;
@@ -64,14 +77,14 @@ void LinkedList::InsertRoot(Node* new_node) {
 				this->size_ += 1;
 			}
 		}
-		this->Print();
-		// cout << "merging" << endl;
 		this->Merge();
 	}
 }
 
 void LinkedList::InsertChild(Node* new_node) {
-
+// Inserts a node into a LinkedList always at the head of the list (left-most)
+// 	 Parameters: new_node - pointer to the node to be added
+//   Returns: None
 	if(this->head == NULL) {
 		this->head = new_node;
 		this->head->right_sibling_ = NULL;
@@ -86,10 +99,16 @@ void LinkedList::InsertChild(Node* new_node) {
 }
 
 void LinkedList::Merge() {
+// Merges the LinkedList so no two roots have the same rank
+// Used to merge the root_list of a BinomialHeap class
+// 	 Parameters: None
+//   Returns: None
 	Node* prev_node = NULL;
 	Node* current_node = NULL;
 	Node* next_node = NULL;
 
+	// merging the first two nodes of the list requires a special loop
+	// in order to ensure the head pointer always points at the leftmost node
 	while(this->head->right_sibling_ != NULL && this->head->get_rank() == this->head->right_sibling_->get_rank()) {
 		current_node = this->head;
 		next_node = this->head->right_sibling_;
@@ -104,10 +123,13 @@ void LinkedList::Merge() {
 
 	}
 
+	// after the head node is not required to be merged with its successor,
+	// continue checking for the need to merge if there are greater than 1 node still in the root_list
 	if(this->head->right_sibling_ != NULL) {
 		prev_node = this->head;
 		current_node = this->head->right_sibling_;
 
+		// continue the loop until each node in the list has a distinct rank
 		while(current_node->right_sibling_ != NULL) {
 			next_node = current_node->right_sibling_;
 			if(current_node->get_rank() == next_node->get_rank()) {
@@ -135,11 +157,14 @@ void LinkedList::Merge() {
 			}
 		}
 	}
+	// update the size of the list after the merge takes place
 	this->UpdateSize();
 }
 
 int LinkedList::GetMinimum() {
-
+// Gets the minimum key in the LinkedList
+// 	 Parameters: None
+//   Returns: the smallest integer key
 	int min = 999999;
 
 	if(this->head == NULL) {
@@ -158,10 +183,16 @@ int LinkedList::GetMinimum() {
 }
 
 int LinkedList::GetSize() {
+// Gets the number of nodes in the LinkedList
+// 	 Parameters: None
+//   Returns: the integer size
 	return this->size_;
 }
 
 void LinkedList::Print() {
+// Prints the key of each node in the LinkedList
+// 	 Parameters: None
+//   Returns: None
 	if(this->head == NULL) {
 		cout << "[ ]" << endl;
 	}
@@ -177,6 +208,10 @@ void LinkedList::Print() {
 }
 
 void LinkedList::UpdateSize() {
+// Updates the current size of the LinkedList
+// Used after a merge, because multiple pairs of nodes in the list may be consolidated into one
+// 	 Parameters: None
+//   Returns: None
 	int new_size = 0;
 	if(this->head == NULL) {
 		//
@@ -190,4 +225,3 @@ void LinkedList::UpdateSize() {
 	}
 	this->size_ = new_size;
 }
-// -----------------------------------------------------------------------------------------------

@@ -22,19 +22,19 @@ class Node; // forward declaration of Node to use in LinkedList()
 //      Used within the Node and BinomialHeap classes only. 
 class LinkedList {
 private:
-	int size_;
+	int size_;                    // the number of nodes in the LinkedList
 public:
-    LinkedList();
-    ~LinkedList();
+    LinkedList();                 // default constructor
+    ~LinkedList();                // destructor
 
-	Node* head;
-    void InsertRoot(Node*);
-    void InsertChild(Node*);
-    int GetMinimum();
-    int GetSize();
-    void UpdateSize();
-    void Merge();
-    void Print();
+	Node* head;                   // node pointer to the left-most node in the list
+    void InsertRoot(Node*);       // inserts a node into the LinkedList (as root_list of BinomialHeap)
+    void InsertChild(Node*);      // inserts a node into the LinkedList (as a child of a Node)
+    int GetMinimum();             // Gets the minimum key among the nodes in the LinkedList
+    int GetSize();                // Gets the number of nodes in the LinkedList
+    void UpdateSize();            // Update the number of nodes in the LinkedList
+    void Merge();                 // Merges the LinkedList so no two nodes have the same number of children
+    void Print();                 // Prints the key for each node in the LinkedList
 };
 
 #endif
