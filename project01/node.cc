@@ -1,4 +1,15 @@
-// Node.cpp
+/*
+ * Project: COMP 401 - Project01
+ *
+ * Author: Devin Delfino
+ *
+ * File Name: node.cc
+ *
+ * File Contents: This file contains the implementations for the constructors and methods for the Node class.
+ *				  The datamembers include a key (the integer being stored), a rank (the number of children the node has),
+ *				  and children (a LinkedList of node pointers to child node). The methods include get_key, set_key,
+ *				  get_rank, AddChild, set_right_sibling, and Print. The Node class includes a parameterized constructor only.
+ */
 
 #include "node.h"
 
@@ -40,16 +51,16 @@ void Node::Print() {
 	cout << endl;
 }
 
-void Node::set_key(int new_key_) {
+void Node::set_key(int new_key) {
 	// update key_
-	this->key_ = new_key_;
+	this->key_ = new_key;
 
-	// retain heap-ordering property where children_ key_s are always greater than or equal to its parent_ key_
+	// retain heap-ordering property where children keys are always greater than or equal to its parent key
 
 	if(this->parent_ != NULL) {
 		if(this->get_key() < this->parent_->get_key()) {
 			this->key_ = this->parent_->get_key();
-			this->parent_->set_key(new_key_);
+			this->parent_->set_key(new_key);
 		}
 	}
 }

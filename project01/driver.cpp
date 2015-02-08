@@ -1,4 +1,14 @@
-// driver.cpp
+/*
+ * Project: COMP 401 - Project01
+ *
+ * Author: Devin Delfino
+ *
+ * File Name: driver.cc
+ *
+ * File Contents: Driver program that tests the various functionalities for the BinomialHeap class including
+ * 				  inserting integers into a binomial heap, searching for keys, decreasing keys, deleting nodes,
+ * 				  loading integers from a file into a binomial heap, and deleting the minimum node. 
+ */
 
 #include "binomial_heap.h"
 

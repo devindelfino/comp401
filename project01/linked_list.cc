@@ -1,4 +1,15 @@
-// LinkedList.cpp
+/*
+ * Project: COMP 401 - Project01
+ *
+ * Author: Devin Delfino
+ *
+ * File Name: linked_list.cc
+ *
+ * File Contents: This file contains the implementations for the various constructors and methods of the LinkedList class.
+ *				  The datamembers include size (number of nodes in the linked list) and head (the pointer to the leftmost
+ *                node of the list). The methods include InsertRoot, InsertChild, GetMinimum, GetSize, UpdateSize, Merge,
+ *                and Print. It includes a default constructor only.  
+ */
 
 #include "linked_list.h"
 #include "node.h"

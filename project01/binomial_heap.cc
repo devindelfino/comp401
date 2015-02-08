@@ -1,4 +1,15 @@
-// BinomialHeap.cpp
+/*
+ * Project: COMP 401 - Project01
+ *
+ * Author: Devin Delfino
+ *
+ * File Name: binomial_heap.cc
+ *
+ * File Contents: This file contains the implementations of the various constructors and methods of the BinomialHeap class. It supports
+ *                a default constructor and a parameterized constructor that can be initialized with a Node pointer. The datamembers
+ *                include root_list (a LinkedList containing the roots of each binomial heap). The methods include PrintOut, SearchSubTree, Insert,
+ *				  Join, IsEmpty, FindMinimum, DeleteMinimum, DecreaseKey, DeleteNode, LoadData, GetSize, Display, and Search.
+ */
 
 #include "binomial_heap.h"
 

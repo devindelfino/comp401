@@ -1,4 +1,14 @@
-// Node.h
+/*
+ * Project: COMP 401 - Project01
+ *
+ * Author: Devin Delfino
+ *
+ * File Name: node.h
+ *
+ * File Contents: The Node class is a small container used for each node in the binomial heap. This class is ONLY
+ *				  meant to be used within the LinkedList and BinomialHeap implementations, so a user will never
+ *				  directly utilize the Node class.
+ */
 
 #ifndef COMP401_PROJECT01_NODE_H
 #define COMP401_PROJECT01_NODE_H
