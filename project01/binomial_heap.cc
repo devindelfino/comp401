@@ -42,6 +42,7 @@ void BinomialHeap::Insert(Node* new_node) {
 	new_node->right_sibling_ = NULL;
 	BinomialHeap temp_heap = BinomialHeap(new_node);
 	this->Join(temp_heap);
+	cout << "\n" << new_node->get_key() << " Inserted\n" <<endl;
 }
 
 void BinomialHeap::Insert(int new_key) {
@@ -52,6 +53,7 @@ void BinomialHeap::Insert(int new_key) {
 	Node* new_node = new Node(new_key);
 	BinomialHeap temp_heap = BinomialHeap(new_node);
 	this->Join(temp_heap);
+	cout << "\n" << new_key << " Inserted\n" <<endl;
 }
 
 void BinomialHeap::Join(BinomialHeap b_heap) {
@@ -107,7 +109,6 @@ Node* BinomialHeap::DeleteMinimum() {
 		Merge_heap.Insert(temp_node);
 	}
 
-	cout << "Merged heap from children_" <<endl;
 	Merge_heap.Display();
 	// Join the original heap with the new Merge_heap containing the children_ of the deleted node
 	this->Join(Merge_heap);
@@ -187,6 +188,8 @@ void BinomialHeap::Display() {
 //    Parameters: None
 //    Returns: None
 	cout << "==========================================" << endl;
+	cout << "BINOMIAL HEAP" << endl;
+	cout << "==========================================" << endl;
 	cout << "Root List: ";
 	this->root_list_.Print();
 	cout << endl;
@@ -195,6 +198,7 @@ void BinomialHeap::Display() {
 	while(temp_node != NULL) {
 		cout << "ROOT ==========================================" << endl;
 		this->PrintOut(temp_node);
+		cout << "--------------------------------------------" << endl;
 		temp_node = temp_node->right_sibling_;
 	}
 	cout << "==========================================" << endl;
@@ -204,7 +208,6 @@ void BinomialHeap::PrintOut(Node* n) {
 // Recursively prints out the node and all of its children
 //    Parameters: n - node pointer
 //    Returns: None
-	cout << "--------------------------------------------" << endl;
 	n->Print();
 
 	Node* temp_node = n->children_.head;
@@ -212,7 +215,7 @@ void BinomialHeap::PrintOut(Node* n) {
 		this->PrintOut(temp_node);
 		temp_node = temp_node->right_sibling_;
 	}
-	cout << "--------------------------------------------" << endl;
+	
 }
 
 Node* BinomialHeap::Search(int key_query) {
