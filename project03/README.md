@@ -4,7 +4,7 @@ Project 03: Ethics in Computing - Safety-Critical Systems
 
 Description
 -----------
-
+Safety-Critical Systems are complex systems predominantly controlled by computer software where failure of the system has severe negative consequences towards humans, lives, or the environment. Examples include space satellites, medical instrumentation
 
 Notes for [Reference 1](http://cacm.acm.org/magazines/2000/4/7692-the-ethics-of-safety-critical-systems/fulltext)
 -----------------------
@@ -37,6 +37,16 @@ Notes for [Reference 1](http://cacm.acm.org/magazines/2000/4/7692-the-ethics-of-
 7. **Maiandros** - Do not get stuck too long informally designing and diagraming a system. Introduce a formal way of testing (programming language or mathematical notation) to recognize specifications and catch more errors at an early stage.
 
 
+Notes for [Reference 2](http://www.idt.mdh.se/utbildning/exjobb/files/TR0358.pdf)
+-----------------------
+###### General Notes
+
+* 
+
+
+
+
 References
 ----------
 1. [The Ethics of Safety-Critical Systems](http://cacm.acm.org/magazines/2000/4/7692-the-ethics-of-safety-critical-systems/fulltext)
+2. [Ethics and Safety-Critical Software Systems](http://www.idt.mdh.se/utbildning/exjobb/files/TR0358.pdf)
