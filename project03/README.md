@@ -4,7 +4,7 @@ Project 03: Ethics in Computing - Safety-Critical Systems
 
 Description
 -----------
-Safety-Critical Systems are complex systems predominantly controlled by computer software where failure of the system has severe negative consequences towards humans, lives, or the environment. Examples include space satellites, medical instrumentation
+Safety-Critical Systems are complex systems predominantly controlled by computer software where failure of the system has severe negative consequences towards humans, lives, or the environment. Examples include space satellites, medical instruments, railway signalling, air traffic control, weapons systems, nuclear powerplantsthe precautionary principle says that if the consequences are unknown but are judged to have a high risk of being negative, it is better to not carry out the act., etc.
 
 Notes for [Reference 1](http://cacm.acm.org/magazines/2000/4/7692-the-ethics-of-safety-critical-systems/fulltext)
 -----------------------
@@ -41,8 +41,18 @@ Notes for [Reference 2](http://www.idt.mdh.se/utbildning/exjobb/files/TR0358.pdf
 -----------------------
 ###### General Notes
 
-* 
+* increasing the safety of a system may hinder other favorable properties such as low cost, availability, usability, and performance
+* the precautionary principle says that if the consequences of an action are unknown but are judged to have a high risk of being negative, it is better to not carry out the act.
+* this principle encourages the search for safer alternative options and solutions
+* software is considered 'safe' when it is impossible (highly unlikely) that it could produce an output that leads to a serious event like property damage, physical harm, etc.
+* company and all employees contributing to a system are responsible for making an effort to produce a safe product
 
+###### Problems with Software
+
+1. problems arise with communication between two areas of expertise (engineers building software for an application that they have no background knowlegde about)
+2. Incompleteness of requirements can lead to unwanted behaviour that wasn't distinguished in the requirements design
+3. Complicated software can have the potential to go beyond known limitation since it can be sometimes too difficult to determine how it will perform in all situations
+4. Changing the design of software to remove faults may introduce new faults that are difficult to detect
 
 
 
