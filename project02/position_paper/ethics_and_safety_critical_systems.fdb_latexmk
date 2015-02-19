@@ -1,0 +1,25 @@
+# Fdb version 3
+["bibtex ethics_and_safety_critical_systems"] 1424314844 "ethics_and_safety_critical_systems.aux" "ethics_and_safety_critical_systems.bbl" "ethics_and_safety_critical_systems" 1424314846
+  "/usr/local/texlive/2013/texmf-dist/bibtex/bst/base/acm.bst" 1292289607 21064 c61a48664f3c347ce7f73c1a6a530506 ""
+  "ethics_and_safety_critical_systems.aux" 1424314846 84 1e0b60ab8d92aaedacab4acae7ec2653 ""
+  "ethics_and_safety_critical_systems.bcf" 0 -1 0 ""
+  "workscited.bib" 1424314550 283 2dfd18db5ea0c88ae4b534548cfc0590 ""
+  (generated)
+  "ethics_and_safety_critical_systems.blg"
+  "ethics_and_safety_critical_systems.bbl"
+["pdflatex"] 1424314845 "ethics_and_safety_critical_systems.tex" "ethics_and_safety_critical_systems.pdf" "ethics_and_safety_critical_systems" 1424314846
+  "/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
+  "/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty" 1303254447 7140 ece2cc23d9f20e1f53975ac167f42d3e ""
+  "/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifvtex.sty" 1335995445 6797 68c89f65e01894df882dd523d3fc0a8f ""
+  "/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls" 1254151887 20571 b8bd218bf2e18b4f5817ee643cd9c515 ""
+  "/usr/local/texlive/2013/texmf-dist/tex/latex/base/size12.clo" 1254151887 9053 a28d9b3c915d12545f3d5e7c4986be20 ""
+  "/usr/local/texlive/2013/texmf-dist/tex/latex/cite/cite.sty" 1284405395 32577 d37d76244d26661e9ca51f1fa50cf0d1 ""
+  "/usr/local/texlive/2013/texmf-dist/tex/latex/geometry/geometry.sty" 1284422013 40502 e003406220954b0716679d7928aedd8a ""
+  "/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty" 1156702488 2266 7054435e4584a41cf53b0a7ca624d0cb ""
+  "ethics_and_safety_critical_systems.aux" 1424314846 84 1e0b60ab8d92aaedacab4acae7ec2653 ""
+  "ethics_and_safety_critical_systems.bbl" 1424314845 251 995a16abc4bf5b01a601adb00b2f7e67 "bibtex ethics_and_safety_critical_systems"
+  "ethics_and_safety_critical_systems.tex" 1424314838 268 14f3e8312c0b724e742b0a2f0631844d ""
+  (generated)
+  "ethics_and_safety_critical_systems.log"
+  "ethics_and_safety_critical_systems.pdf"
+  "ethics_and_safety_critical_systems.aux"

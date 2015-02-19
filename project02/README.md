@@ -67,3 +67,4 @@ References
 ----------
 1. [The Ethics of Safety-Critical Systems](http://cacm.acm.org/magazines/2000/4/7692-the-ethics-of-safety-critical-systems/fulltext)
 2. [Ethics and Safety-Critical Software Systems](http://www.idt.mdh.se/utbildning/exjobb/files/TR0358.pdf)
+3. [The Practice of Formal Methods in Safety Critical Systems](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=9EE7121EDD335BFC49DD51DCDB425645?doi=10.1.1.52.3629&rep=rep1&type=pdf)
