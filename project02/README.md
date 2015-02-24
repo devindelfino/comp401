@@ -57,11 +57,7 @@ Notes for [Reference 2](http://www.idt.mdh.se/utbildning/exjobb/files/TR0358.pdf
 
 Objective
 ---------
-Write a 3-5 page position paper accomplishing the following:
-
-1. Identify the ethical problem. What is it? Why is it an issue?
-2. Speak from varying perspectives on the issue. (software engineer, user experience)
-3. Present my own thoughts and position on the topic
+Write a 3-5 page informative policy paper providing information on the topic
 
 References
 ----------
