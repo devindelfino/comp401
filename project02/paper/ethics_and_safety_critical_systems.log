@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 FEB 2015 08:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 FEB 2015 14:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -115,7 +115,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--15
 [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] (./ethics_and_safety_critical_systems.bbl [3]) [4]
+[2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+[4] (./ethics_and_safety_critical_systems.bbl) [5]
 (./ethics_and_safety_critical_systems.aux) ) 
 Here is how much of TeX's memory you used:
  776 strings out of 493315
@@ -124,17 +139,17 @@ Here is how much of TeX's memory you used:
  4282 multiletter control sequences out of 15000+600000
  5192 words of font info for 19 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 24i,4n,32p,1476b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 24i,5n,32p,1490b,142s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on ethics_and_safety_critical_systems.pdf (4 pages, 58632 bytes)
+Output written on ethics_and_safety_critical_systems.pdf (5 pages, 63200 bytes)
 .
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 36 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
