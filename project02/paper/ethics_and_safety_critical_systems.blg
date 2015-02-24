@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ethics_and_safety_critical_systems.aux
+The style file: acm.bst
+Database file #1: workscited.bib
+I was expecting a `,' or a `}'---line 23 of file workscited.bib
+ :     
+ :     month= {January},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty year in ref2
+You've used 3 entries,
+            2253 wiz_defined-function locations,
+            547 strings with 4307 characters,
+and the built_in function-call counts, 866 in all, are:
+= -- 85
+> -- 36
+< -- 0
++ -- 17
+- -- 12
+* -- 71
+:= -- 154
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 15
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 27
+empty$ -- 66
+format.name$ -- 12
+if$ -- 167
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 2
+newline$ -- 18
+num.names$ -- 6
+pop$ -- 12
+preamble$ -- 1
+purify$ -- 12
+quote$ -- 0
+skip$ -- 15
+stack$ -- 0
+substring$ -- 55
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 12
+warning$ -- 1
+while$ -- 10
+width$ -- 4
+write$ -- 32
+(There was 1 error message)

@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{ref1}
+{\sc Bowen, J.}
+\newblock The ethics of safety-critical systems.
+\newblock {\em Commun. ACM 43}, 4 (April 2000), 91--97.
+
+\bibitem{ref3}
+{\sc Liu, S., Stavridou, V., Dutertre, B., and Stavridou, S. L.~V.}
+\newblock The practice of formal methods in safety critical systems.
+\newblock {\em Journal of Systems and Software 28\/} (1995), 28--77.
+
+\bibitem{ref2}
+{\sc Muftic, A.}
+\newblock Ethics and safety-critical software systems.
+\newblock Master's thesis, M{\"a}lardalen University.
+
+\end{thebibliography}
