@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{ref1}
+{\sc {K}evin {W}ayne}.
+\newblock {P}riority {Q}ueues.
+\newblock
+  http://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/BinomialHeaps.pdf,
+  2013.
+
+\bibitem{ref2}
+{\sc {U}nknown}.
+\newblock {B}inomial {H}eap.
+\newblock http://en.wikipedia.org/wiki/Binomial\_heap, 2015.
+
+\end{thebibliography}
