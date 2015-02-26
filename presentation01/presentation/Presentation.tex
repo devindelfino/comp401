@@ -2,9 +2,18 @@
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage[skip=2pt,font=scriptsize]{caption}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+% Algorithms
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\algsetup{linenosize=\small}
 
 % Captions
 \captionsetup{labelformat=empty,labelsep=none}
+\DeclareCaptionFormat{myformat}{#3}
+\captionsetup[algorithm]{format=myformat}
 
 % References
 \usepackage{url}
@@ -205,19 +214,98 @@
 
   \begin{figure}
     % \caption{$11 = 2^0 + 2^1 + 2^2 + 2^3 \Rightarrow 1011$}
-    \includegraphics[height=6cm]{./img/bheap.png}
+    \includegraphics[height=7.5cm]{./img/bheap.png}
   \end{figure}
 
 % explain both bullet points and show hidden caption
 \end{frame}
 
+\section{Implementation Structure} % ==========================================================================
+% BINOMIAL HEAP ------------------------------------------------
+\begin{frame}
+\frametitle{Implementation Structure}
+  
+\begin{figure}
+    \includegraphics[height=6cm]{./img/structimp.png}
+\end{figure}
+
+\end{frame}
+
 \section{Standard Functions} % ==========================================================================
 % Merge ------------------------------------------------
+% during slide 1, draw merged output
 \begin{frame}
 \frametitle{Standard Functions: Merge}
   \begin{itemize}
-    \item
+    \item Two $k$ ordered binomial trees are merged into one $k + 1$ ordered binomial tree.
   \end{itemize}
+
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{6cm} % alternative top-align that's better for graphics
+        \begin{algorithm}[H]
+        \small
+        \caption{Merge}
+        \begin{algorithmic}
+          \REQUIRE Node* root\_A, Node* root\_B
+
+          \IF{root\_A.key $\leq$ root\_B.key}
+            \STATE root\_B.right\_sibling $\leftarrow$ root\_A.child
+            \STATE root\_A.child $\leftarrow$ root\_B
+            \STATE root\_B.parent $\leftarrow$ root\_A
+            \RETURN root\_A
+          \ELSE
+            \STATE root\_A.right\_sibling $\leftarrow$ root\_B.child
+            \STATE root\_B.child $\leftarrow$ root\_A
+            \STATE root\_A.parent $\leftarrow$ root\_B
+            \RETURN root\_B
+          \ENDIF
+        \end{algorithmic}
+        \end{algorithm}
+    \end{column}
+    \begin{column}[T]{5.5cm} % alternative top-align that's better for graphics
+      \begin{figure}
+        \includegraphics[height=5cm]{./img/premerge.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Standard Functions: Merge}
+  \begin{itemize}
+    \item Two $k$ ordered binomial trees are merged into one $k + 1$ ordered binomial tree.
+  \end{itemize}
+
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{6cm} % alternative top-align that's better for graphics
+        \begin{algorithm}[H]
+        \small
+        \caption{Merge}
+        \begin{algorithmic}
+          \REQUIRE Node* root\_A, Node* root\_B
+
+          \IF{root\_A.key $\leq$ root\_B.key}
+            \STATE root\_B.right\_sibling $\leftarrow$ root\_A.child
+            \STATE root\_A.child $\leftarrow$ root\_B
+            \STATE root\_B.parent $\leftarrow$ root\_A
+            \RETURN root\_A
+          \ELSE
+            \STATE root\_A.right\_sibling $\leftarrow$ root\_B.child
+            \STATE root\_B.child $\leftarrow$ root\_A
+            \STATE root\_A.parent $\leftarrow$ root\_B
+            \RETURN root\_B
+          \ENDIF
+        \end{algorithmic}
+        \end{algorithm}
+    \end{column}
+    \begin{column}[T]{5.5cm} % alternative top-align that's better for graphics
+      \begin{figure}
+        \includegraphics[height=5cm]{./img/postmerge.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+
 \end{frame}
 
 % Join ------------------------------------------------
@@ -236,56 +324,220 @@
   \end{itemize}
 \end{frame}
 
-% % FindMinimum ------------------------------------------------
-% \begin{frame}
-% \frametitle{Standard Functions: FindMinimum}
-%   \begin{itemize}
-%     \item
-%   \end{itemize}
-% \end{frame}
-
 % DeleteMinimum ------------------------------------------------
 \begin{frame}
 \frametitle{Standard Functions: DeleteMinimum}
   \begin{itemize}
     \item
   \end{itemize}
+
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{6cm} % alternative top-align that's better for graphics
+        \begin{algorithm}[H]
+        \small
+        \caption{BinomialHeap : DeleteMinimum}
+        \begin{algorithmic}
+          \REQUIRE Node* root\_A, Node* root\_B
+
+          \IF{root\_A.key $\leq$ root\_B.key}
+            \STATE root\_B.right\_sibling $\leftarrow$ root\_A.child
+            \STATE root\_A.child $\leftarrow$ root\_B
+            \STATE root\_B.parent $\leftarrow$ root\_A
+            \RETURN root\_A
+          \ELSE
+            \STATE root\_A.right\_sibling $\leftarrow$ root\_B.child
+            \STATE root\_B.child $\leftarrow$ root\_A
+            \STATE root\_A.parent $\leftarrow$ root\_B
+            \RETURN root\_B
+          \ENDIF
+        \end{algorithmic}
+        \end{algorithm}
+    \end{column}
+    \begin{column}[T]{5.5cm} % alternative top-align that's better for graphics
+      \begin{figure}
+        \includegraphics[height=5cm]{./img/postmerge.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
-% DecreaseKey ------------------------------------------------
+% DecreaseKey ------------------------------------------------------------------------------------------
 \begin{frame}
 \frametitle{Standard Functions: DecreaseKey}
   \begin{itemize}
-    \item
+    \item Decreases the key of a given node in the Binomial Heap
   \end{itemize}
+
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{6cm} % alternative top-align that's better for graphics
+        \begin{algorithm}[H]
+        \small
+        \caption{BinomialHeap : DecreaseKey}
+        \begin{algorithmic}
+          \REQUIRE Node* node, int new\_key
+
+          \STATE decrease\_node.key $\leftarrow$ new\_key
+          \STATE Node* temp $\leftarrow$ decrease\_node
+          \WHILE{temp.parent $\neq$ NULL}
+              \IF{temp.key $<$ temp.parent.key}
+                \STATE swap(temp.key, temp.parent.key)
+              \ELSE
+                \STATE break
+              \ENDIF
+              \STATE temp $\leftarrow$ temp.parent
+          \ENDWHILE
+        \end{algorithmic}
+        \end{algorithm}
+    \end{column}
+    \begin{column}[T]{7cm} % alternative top-align that's better for graphics
+      \begin{figure}
+        \includegraphics[height=8cm]{./img/decreasekeyA.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+
 \end{frame}
 
-% Delete ------------------------------------------------
+\begin{frame}
+\frametitle{Standard Functions: DecreaseKey}
+  \begin{itemize}
+    \item Decreases the key of a given node in the Binomial Heap
+  \end{itemize}
+
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{6cm} % alternative top-align that's better for graphics
+        \begin{algorithm}[H]
+        \small
+        \caption{BinomialHeap : DecreaseKey}
+        \begin{algorithmic}
+          \REQUIRE Node* node, int new\_key
+
+          \STATE decrease\_node.key $\leftarrow$ new\_key
+          \STATE Node* temp $\leftarrow$ decrease\_node
+          \WHILE{temp.parent $\neq$ NULL}
+              \IF{temp.key $<$ temp.parent.key}
+                \STATE swap(temp.key, temp.parent.key)
+              \ELSE
+                \STATE break
+              \ENDIF
+              \STATE temp $\leftarrow$ temp.parent
+          \ENDWHILE
+        \end{algorithmic}
+        \end{algorithm}
+    \end{column}
+    \begin{column}[T]{7.5cm} % alternative top-align that's better for graphics
+      \begin{figure}
+        \includegraphics[height=8cm]{./img/decreasekeyB.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Standard Functions: DecreaseKey}
+  \begin{itemize}
+    \item Decreases the key of a given node in the Binomial Heap
+  \end{itemize}
+
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{6cm} % alternative top-align that's better for graphics
+        \begin{algorithm}[H]
+        \small
+        \caption{BinomialHeap : DecreaseKey}
+        \begin{algorithmic}
+          \REQUIRE Node* node, int new\_key
+
+          \STATE decrease\_node.key $\leftarrow$ new\_key
+          \STATE Node* temp $\leftarrow$ decrease\_node
+          \WHILE{temp.parent $\neq$ NULL}
+              \IF{temp.key $<$ temp.parent.key}
+                \STATE swap(temp.key, temp.parent.key)
+              \ELSE
+                \STATE break
+              \ENDIF
+              \STATE temp $\leftarrow$ temp.parent
+          \ENDWHILE
+        \end{algorithmic}
+        \end{algorithm}
+    \end{column}
+    \begin{column}[T]{7.5cm} % alternative top-align that's better for graphics
+      \begin{figure}
+        \includegraphics[height=8cm]{./img/decreasekeyC.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Standard Functions: DecreaseKey}
+  \begin{itemize}
+    \item Decreases the key of a given node in the Binomial Heap
+  \end{itemize}
+
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{6cm} % alternative top-align that's better for graphics
+        \begin{algorithm}[H]
+        \small
+        \caption{BinomialHeap : DecreaseKey}
+        \begin{algorithmic}
+          \REQUIRE Node* node, int new\_key
+
+          \STATE decrease\_node.key $\leftarrow$ new\_key
+          \STATE Node* temp $\leftarrow$ decrease\_node
+          \WHILE{temp.parent $\neq$ NULL}
+              \IF{temp.key $<$ temp.parent.key}
+                \STATE swap(temp.key, temp.parent.key)
+              \ELSE
+                \STATE break
+              \ENDIF
+              \STATE temp $\leftarrow$ temp.parent
+          \ENDWHILE
+        \end{algorithmic}
+        \end{algorithm}
+    \end{column}
+    \begin{column}[T]{7.5cm} % alternative top-align that's better for graphics
+      \begin{figure}
+        \includegraphics[height=8cm]{./img/decreasekeyD.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% Delete -----------------------------------------------------------------------------------------------
 \begin{frame}
 \frametitle{Standard Functions: Delete}
   \begin{itemize}
-    \item
+    \item Deletes a given node from the Binomial Heap
   \end{itemize}
+
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{9cm} % alternative top-align that's better for graphics
+        \begin{algorithm}[H]
+        \small
+        \caption{BinomialHeap : Delete}
+        \begin{algorithmic}
+          \REQUIRE Node* delete\_node
+
+          \STATE BinomialHeap.DecreaseKey(delete\_node, $-9999$)
+          \STATE BinomialHeap.DeleteMinimum()
+        \end{algorithmic}
+        \end{algorithm}
+    \end{column}
+  \end{columns}
+
+  \begin{figure}
+    \includegraphics[height=5cm]{./img/postmerge.png}
+  \end{figure}
+
 \end{frame}
 
 \section{Uses of Binomial Heaps} % ==========================================================================
 % BINOMIAL HEAP ------------------------------------------------
 \begin{frame}
 \frametitle{Uses of Binomial Heaps}
-  \begin{itemize}
-    \item A \alert{Binomial Heap} is a collection of binomial trees that satisfy the following two binomial heap properties:
-      \begin{enumerate}
-        \item The key of any node is greater than or equal to the key of its parent (minimum-heap property).
-        \item There cannot be two binomial trees of the same order.
-      \end{enumerate}
-    % \item Binomial heaps are used to implement priority queues.
-  \end{itemize}
-\end{frame}
-
-\section{Implementation} % ==========================================================================
-% BINOMIAL HEAP ------------------------------------------------
-\begin{frame}
-\frametitle{Implementation}
   \begin{itemize}
     \item A \alert{Binomial Heap} is a collection of binomial trees that satisfy the following two binomial heap properties:
       \begin{enumerate}
