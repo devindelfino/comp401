@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  28 FEB 2015 16:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  28 FEB 2015 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1363,305 +1363,374 @@ Overfull \hbox (33.05705pt too wide) in paragraph at lines 310--310
 [16
 
  <./img/postmerge.png (PNG copy)>]
-<./img/joinorig.png, id=580, 442.65375pt x 301.125pt>
+<./img/joinorig.png, id=580, 302.12875pt x 269.005pt>
 File: ./img/joinorig.png Graphic file (type png)
  <use ./img/joinorig.png>
-Package pdftex.def Info: ./img/joinorig.png used on input line 343.
-(pdftex.def)             Requested size: 181.94174pt x 123.76965pt.
+Package pdftex.def Info: ./img/joinorig.png used on input line 346.
+(pdftex.def)             Requested size: 135.81377pt x 120.92421pt.
 
-Overfull \hbox (25.4516pt too wide) in paragraph at lines 343--343
- [] 
- []
-
-<./img/joinnew.png, id=581, 442.65375pt x 301.125pt>
+<./img/joinnew.png, id=581, 312.16624pt x 266.9975pt>
 File: ./img/joinnew.png Graphic file (type png)
  <use ./img/joinnew.png>
-Package pdftex.def Info: ./img/joinnew.png used on input line 343.
-(pdftex.def)             Requested size: 181.94174pt x 123.76965pt.
+Package pdftex.def Info: ./img/joinnew.png used on input line 346.
+(pdftex.def)             Requested size: 141.38329pt x 120.92421pt.
 
-Overfull \hbox (25.4516pt too wide) in paragraph at lines 343--343
- [] 
+Overfull \hbox (34.1432pt too wide) detected at line 346
+[][][] [][][][][][][][][] [][][][][][][] 
  []
 
 
-Overfull \vbox (25.77261pt too high) detected at line 343
+Overfull \vbox (33.92717pt too high) detected at line 346
  []
 
 [17
 
  <./img/joinorig.png (PNG copy)> <./img/joinnew.png (PNG copy)>]
-<./img/preinsert.png, id=612, 538.01pt x 266.9975pt>
-File: ./img/preinsert.png Graphic file (type png)
- <use ./img/preinsert.png>
-Package pdftex.def Info: ./img/preinsert.png used on input line 374.
-(pdftex.def)             Requested size: 249.40038pt x 123.76965pt.
+<./img/joinnew2.png, id=612, 210.7875pt x 214.8025pt>
+File: ./img/joinnew2.png Graphic file (type png)
+ <use ./img/joinnew2.png>
+Package pdftex.def Info: ./img/joinnew2.png used on input line 365.
+(pdftex.def)             Requested size: 69.80132pt x 71.13188pt.
 
-Overfull \hbox (21.77834pt too wide) in paragraph at lines 374--374
- [] 
+Overfull \hbox (34.1432pt too wide) detected at line 365
+[][][] [][][][][][][][][] [][][][][][][] 
  []
 
-<./img/toinsert.png, id=613, 154.5775pt x 302.12875pt>
-File: ./img/toinsert.png Graphic file (type png)
+File: ./img/joinorig.png Graphic file (type png)
+<use ./img/joinorig.png>
+Package pdftex.def Info: ./img/joinorig.png used on input line 365.
+(pdftex.def)             Requested size: 191.73897pt x 170.71652pt.
 
-<use ./img/toinsert.png>
-Package pdftex.def Info: ./img/toinsert.png used on input line 374.
-(pdftex.def)             Requested size: 63.32292pt x 123.76965pt.
-
-Overfull \hbox (6.41742pt too wide) in paragraph at lines 374--374
- [] 
- []
-
-
-Overfull \vbox (29.87262pt too high) detected at line 374
+Overfull \vbox (47.8445pt too high) detected at line 365
  []
 
 [18
 
- <./img/preinsert.png (PNG copy)> <./img/toinsert.png (PNG copy)>]
-<./img/insertA.png, id=644, 615.29875pt x 302.12875pt>
-File: ./img/insertA.png Graphic file (type png)
- <use ./img/insertA.png>
-Package pdftex.def Info: ./img/insertA.png used on input line 383.
-(pdftex.def)             Requested size: 347.6726pt x 170.71652pt.
+ <./img/joinnew2.png (PNG copy)>]
+<./img/joinnew3.png, id=643, 223.83624pt x 222.8325pt>
+File: ./img/joinnew3.png Graphic file (type png)
 
-Overfull \hbox (40.38274pt too wide) in paragraph at lines 383--383
- [] 
+<use ./img/joinnew3.png>
+Package pdftex.def Info: ./img/joinnew3.png used on input line 384.
+(pdftex.def)             Requested size: 71.45145pt x 71.13188pt.
+
+Overfull \hbox (34.1432pt too wide) detected at line 384
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+<./img/joiningA.png, id=644, 430.60875pt x 280.04625pt>
+File: ./img/joiningA.png Graphic file (type png)
+
+<use ./img/joiningA.png>
+Package pdftex.def Info: ./img/joiningA.png used on input line 384.
+(pdftex.def)             Requested size: 262.50668pt x 170.71652pt.
+
+Overfull \vbox (47.8445pt too high) detected at line 384
  []
 
 [19
 
- <./img/insertA.png (PNG copy)>]
-<./img/insertB.png, id=676, 615.29875pt x 302.12875pt>
-File: ./img/insertB.png Graphic file (type png)
- <use ./img/insertB.png>
-Package pdftex.def Info: ./img/insertB.png used on input line 392.
-(pdftex.def)             Requested size: 347.6726pt x 170.71652pt.
+ <./img/joinnew3.png (PNG copy)> <./img/joiningA.png (PNG copy)>]
+<./img/joiningB.png, id=676, 588.1975pt x 280.04625pt>
+File: ./img/joiningB.png Graphic file (type png)
 
-Overfull \hbox (40.38274pt too wide) in paragraph at lines 392--392
+<use ./img/joiningB.png>
+Package pdftex.def Info: ./img/joiningB.png used on input line 393.
+(pdftex.def)             Requested size: 358.57556pt x 170.71652pt.
+
+Overfull \hbox (51.28569pt too wide) in paragraph at lines 393--393
  [] 
  []
 
 [20
 
- <./img/insertB.png (PNG copy)>]
-<./img/insertC.png, id=708, 491.8375pt x 302.12875pt>
-File: ./img/insertC.png Graphic file (type png)
- <use ./img/insertC.png>
-Package pdftex.def Info: ./img/insertC.png used on input line 402.
-(pdftex.def)             Requested size: 277.91121pt x 170.71652pt.
+ <./img/joiningB.png (PNG copy)>]
+<./img/postjoin.png, id=708, 588.1975pt x 300.12125pt>
+File: ./img/postjoin.png Graphic file (type png)
+
+<use ./img/postjoin.png>
+Package pdftex.def Info: ./img/postjoin.png used on input line 402.
+(pdftex.def)             Requested size: 334.59395pt x 170.71652pt.
+
+Overfull \hbox (27.30408pt too wide) in paragraph at lines 402--402
+ [] 
+ []
 
 [21
 
- <./img/insertC.png (PNG copy)>]
-<./img/insertD.png, id=739, 491.8375pt x 395.4775pt>
-File: ./img/insertD.png Graphic file (type png)
- <use ./img/insertD.png>
-Package pdftex.def Info: ./img/insertD.png used on input line 411.
-(pdftex.def)             Requested size: 247.69678pt x 199.16928pt.
+ <./img/postjoin.png (PNG copy)>]
+<./img/preinsert.png, id=739, 538.01pt x 266.9975pt>
+File: ./img/preinsert.png Graphic file (type png)
+ <use ./img/preinsert.png>
+Package pdftex.def Info: ./img/preinsert.png used on input line 433.
+(pdftex.def)             Requested size: 249.40038pt x 123.76965pt.
 
-[22
+Overfull \hbox (21.77834pt too wide) in paragraph at lines 433--433
+ [] 
+ []
 
- <./img/insertD.png (PNG copy)>] [23
+<./img/toinsert.png, id=740, 154.5775pt x 302.12875pt>
+File: ./img/toinsert.png Graphic file (type png)
 
-]
-<./img/deleteminA.png, id=801, 803.0pt x 547.04375pt>
-File: ./img/deleteminA.png Graphic file (type png)
+<use ./img/toinsert.png>
+Package pdftex.def Info: ./img/toinsert.png used on input line 433.
+(pdftex.def)             Requested size: 63.32292pt x 123.76965pt.
 
-<use ./img/deleteminA.png>
-Package pdftex.def Info: ./img/deleteminA.png used on input line 459.
-(pdftex.def)             Requested size: 375.89072pt x 256.0748pt.
-
-Overfull \hbox (68.60085pt too wide) in paragraph at lines 459--459
+Overfull \hbox (6.41742pt too wide) in paragraph at lines 433--433
  [] 
  []
 
 
-Overfull \vbox (119.84859pt too high) detected at line 459
+Overfull \vbox (29.87262pt too high) detected at line 433
+ []
+
+[22
+
+ <./img/preinsert.png (PNG copy)> <./img/toinsert.png (PNG copy)>]
+<./img/insertA.png, id=771, 615.29875pt x 302.12875pt>
+File: ./img/insertA.png Graphic file (type png)
+ <use ./img/insertA.png>
+Package pdftex.def Info: ./img/insertA.png used on input line 442.
+(pdftex.def)             Requested size: 347.6726pt x 170.71652pt.
+
+Overfull \hbox (40.38274pt too wide) in paragraph at lines 442--442
+ [] 
+ []
+
+[23
+
+ <./img/insertA.png (PNG copy)>]
+<./img/insertB.png, id=803, 615.29875pt x 302.12875pt>
+File: ./img/insertB.png Graphic file (type png)
+ <use ./img/insertB.png>
+Package pdftex.def Info: ./img/insertB.png used on input line 451.
+(pdftex.def)             Requested size: 347.6726pt x 170.71652pt.
+
+Overfull \hbox (40.38274pt too wide) in paragraph at lines 451--451
+ [] 
  []
 
 [24
 
- <./img/deleteminA.png (PNG copy)>]
-<./img/deleteminB.png, id=832, 803.0pt x 547.04375pt>
-File: ./img/deleteminB.png Graphic file (type png)
-
-<use ./img/deleteminB.png>
-Package pdftex.def Info: ./img/deleteminB.png used on input line 481.
-(pdftex.def)             Requested size: 375.89072pt x 256.0748pt.
-
-Overfull \hbox (68.60085pt too wide) in paragraph at lines 481--481
- [] 
- []
-
-
-Overfull \vbox (117.34859pt too high) detected at line 481
- []
+ <./img/insertB.png (PNG copy)>]
+<./img/insertC.png, id=834, 491.8375pt x 302.12875pt>
+File: ./img/insertC.png Graphic file (type png)
+ <use ./img/insertC.png>
+Package pdftex.def Info: ./img/insertC.png used on input line 461.
+(pdftex.def)             Requested size: 277.91121pt x 170.71652pt.
 
 [25
 
- <./img/deleteminB.png (PNG copy)>]
-<./img/postdeleteminA.png, id=864, 349.305pt x 301.125pt>
-File: ./img/postdeleteminA.png Graphic file (type png)
-
-<use ./img/postdeleteminA.png>
-Package pdftex.def Info: ./img/postdeleteminA.png used on input line 514.
-(pdftex.def)             Requested size: 165.0315pt x 142.26378pt.
-
-Overfull \hbox (58.33366pt too wide) in paragraph at lines 514--514
- [] 
- []
-
-<./img/postdeleteminB.png, id=865, 442.65375pt x 301.125pt>
-File: ./img/postdeleteminB.png Graphic file (type png)
-
-<use ./img/postdeleteminB.png>
-Package pdftex.def Info: ./img/postdeleteminB.png used on input line 514.
-(pdftex.def)             Requested size: 209.13472pt x 142.26378pt.
-
-Overfull \hbox (102.43689pt too wide) in paragraph at lines 514--514
- [] 
- []
+ <./img/insertC.png (PNG copy)>]
+<./img/insertD.png, id=866, 491.8375pt x 395.4775pt>
+File: ./img/insertD.png Graphic file (type png)
+ <use ./img/insertD.png>
+Package pdftex.def Info: ./img/insertD.png used on input line 470.
+(pdftex.def)             Requested size: 247.69678pt x 199.16928pt.
 
 [26
 
- <./img/postdeleteminA.png (PNG copy)> <./img/postdeleteminB.png (PNG copy)>]
-Underfull \hbox (badness 7362) in paragraph at lines 551--551
-[] []\OT1/cmss/bx/n/10 if \OT1/cmss/m/n/10 temp.key $\OML/cmm/m/it/10 <$ \OT1/c
-mss/m/n/10 temp.parent.key
- []
+ <./img/insertD.png (PNG copy)>] [27
 
-<./img/decreasekeyA.png, id=896, 803.0pt x 547.04375pt>
-File: ./img/decreasekeyA.png Graphic file (type png)
+]
+<./img/deleteminA.png, id=928, 803.0pt x 547.04375pt>
+File: ./img/deleteminA.png Graphic file (type png)
 
-<use ./img/decreasekeyA.png>
-Package pdftex.def Info: ./img/decreasekeyA.png used on input line 551.
-(pdftex.def)             Requested size: 334.12099pt x 227.62204pt.
+<use ./img/deleteminA.png>
+Package pdftex.def Info: ./img/deleteminA.png used on input line 518.
+(pdftex.def)             Requested size: 375.89072pt x 256.0748pt.
 
-Overfull \hbox (134.9517pt too wide) in paragraph at lines 551--551
+Overfull \hbox (68.60085pt too wide) in paragraph at lines 518--518
  [] 
  []
 
 
-Overfull \hbox (5.69044pt too wide) detected at line 551
-[][][] [][][][][][][][][] [][][][][][][] 
- []
-
-
-Overfull \vbox (40.21814pt too high) detected at line 551
- []
-
-[27
-
- <./img/decreasekeyA.png (PNG copy)>]
-Underfull \hbox (badness 7362) in paragraph at lines 587--587
-[] []\OT1/cmss/bx/n/10 if \OT1/cmss/m/n/10 temp.key $\OML/cmm/m/it/10 <$ \OT1/c
-mss/m/n/10 temp.parent.key
- []
-
-<./img/decreasekeyB.png, id=929, 803.0pt x 547.04375pt>
-File: ./img/decreasekeyB.png Graphic file (type png)
-
-<use ./img/decreasekeyB.png>
-Package pdftex.def Info: ./img/decreasekeyB.png used on input line 587.
-(pdftex.def)             Requested size: 334.12099pt x 227.62204pt.
-
-Overfull \hbox (120.72533pt too wide) in paragraph at lines 587--587
- [] 
- []
-
-
-Overfull \hbox (19.91682pt too wide) detected at line 587
-[][][] [][][][][][][][][] [][][][][][][] 
- []
-
-
-Overfull \vbox (40.21814pt too high) detected at line 587
+Overfull \vbox (119.84859pt too high) detected at line 518
  []
 
 [28
 
- <./img/decreasekeyB.png (PNG copy)>]
-Underfull \hbox (badness 7362) in paragraph at lines 623--623
-[] []\OT1/cmss/bx/n/10 if \OT1/cmss/m/n/10 temp.key $\OML/cmm/m/it/10 <$ \OT1/c
-mss/m/n/10 temp.parent.key
- []
+ <./img/deleteminA.png (PNG copy)>]
+<./img/deleteminB.png, id=959, 803.0pt x 547.04375pt>
+File: ./img/deleteminB.png Graphic file (type png)
 
-<./img/decreasekeyC.png, id=960, 803.0pt x 547.04375pt>
-File: ./img/decreasekeyC.png Graphic file (type png)
+<use ./img/deleteminB.png>
+Package pdftex.def Info: ./img/deleteminB.png used on input line 540.
+(pdftex.def)             Requested size: 375.89072pt x 256.0748pt.
 
-<use ./img/decreasekeyC.png>
-Package pdftex.def Info: ./img/decreasekeyC.png used on input line 623.
-(pdftex.def)             Requested size: 334.12099pt x 227.62204pt.
-
-Overfull \hbox (120.72533pt too wide) in paragraph at lines 623--623
+Overfull \hbox (68.60085pt too wide) in paragraph at lines 540--540
  [] 
  []
 
 
-Overfull \hbox (19.91682pt too wide) detected at line 623
-[][][] [][][][][][][][][] [][][][][][][] 
- []
-
-
-Overfull \vbox (40.21814pt too high) detected at line 623
+Overfull \vbox (117.34859pt too high) detected at line 540
  []
 
 [29
 
- <./img/decreasekeyC.png (PNG copy)>]
-Underfull \hbox (badness 7362) in paragraph at lines 659--659
-[] []\OT1/cmss/bx/n/10 if \OT1/cmss/m/n/10 temp.key $\OML/cmm/m/it/10 <$ \OT1/c
-mss/m/n/10 temp.parent.key
- []
+ <./img/deleteminB.png (PNG copy)>]
+<./img/postdeleteminA.png, id=990, 349.305pt x 301.125pt>
+File: ./img/postdeleteminA.png Graphic file (type png)
 
-<./img/decreasekeyD.png, id=991, 803.0pt x 547.04375pt>
-File: ./img/decreasekeyD.png Graphic file (type png)
+<use ./img/postdeleteminA.png>
+Package pdftex.def Info: ./img/postdeleteminA.png used on input line 573.
+(pdftex.def)             Requested size: 165.0315pt x 142.26378pt.
 
-<use ./img/decreasekeyD.png>
-Package pdftex.def Info: ./img/decreasekeyD.png used on input line 659.
-(pdftex.def)             Requested size: 334.12099pt x 227.62204pt.
-
-Overfull \hbox (120.72533pt too wide) in paragraph at lines 659--659
+Overfull \hbox (58.33366pt too wide) in paragraph at lines 573--573
  [] 
  []
 
+<./img/postdeleteminB.png, id=991, 442.65375pt x 301.125pt>
+File: ./img/postdeleteminB.png Graphic file (type png)
 
-Overfull \hbox (19.91682pt too wide) detected at line 659
-[][][] [][][][][][][][][] [][][][][][][] 
- []
+<use ./img/postdeleteminB.png>
+Package pdftex.def Info: ./img/postdeleteminB.png used on input line 573.
+(pdftex.def)             Requested size: 209.13472pt x 142.26378pt.
 
-
-Overfull \vbox (40.21814pt too high) detected at line 659
+Overfull \hbox (102.43689pt too wide) in paragraph at lines 573--573
+ [] 
  []
 
 [30
 
- <./img/decreasekeyD.png (PNG copy)>]
-File: ./img/postmerge.png Graphic file (type png)
- <use ./img/postmerge.png>
-Package pdftex.def Info: ./img/postmerge.png used on input line 687.
-(pdftex.def)             Requested size: 189.5472pt x 142.26378pt.
+ <./img/postdeleteminA.png (PNG copy)> <./img/postdeleteminB.png (PNG copy)>]
+Underfull \hbox (badness 7362) in paragraph at lines 610--610
+[] []\OT1/cmss/bx/n/10 if \OT1/cmss/m/n/10 temp.key $\OML/cmm/m/it/10 <$ \OT1/c
+mss/m/n/10 temp.parent.key
+ []
 
-Overfull \vbox (24.19313pt too high) detected at line 687
+<./img/decreasekeyA.png, id=1023, 803.0pt x 547.04375pt>
+File: ./img/decreasekeyA.png Graphic file (type png)
+
+<use ./img/decreasekeyA.png>
+Package pdftex.def Info: ./img/decreasekeyA.png used on input line 610.
+(pdftex.def)             Requested size: 334.12099pt x 227.62204pt.
+
+Overfull \hbox (134.9517pt too wide) in paragraph at lines 610--610
+ [] 
+ []
+
+
+Overfull \hbox (5.69044pt too wide) detected at line 610
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+
+Overfull \vbox (40.21814pt too high) detected at line 610
  []
 
 [31
 
-] (./Presentation.toc) [32
+ <./img/decreasekeyA.png (PNG copy)>]
+Underfull \hbox (badness 7362) in paragraph at lines 646--646
+[] []\OT1/cmss/bx/n/10 if \OT1/cmss/m/n/10 temp.key $\OML/cmm/m/it/10 <$ \OT1/c
+mss/m/n/10 temp.parent.key
+ []
 
-]
-Overfull \hbox (13.2214pt too wide) in paragraph at lines 712--712
+<./img/decreasekeyB.png, id=1056, 803.0pt x 547.04375pt>
+File: ./img/decreasekeyB.png Graphic file (type png)
+
+<use ./img/decreasekeyB.png>
+Package pdftex.def Info: ./img/decreasekeyB.png used on input line 646.
+(pdftex.def)             Requested size: 334.12099pt x 227.62204pt.
+
+Overfull \hbox (120.72533pt too wide) in paragraph at lines 646--646
  [] 
  []
 
+
+Overfull \hbox (19.91682pt too wide) detected at line 646
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+
+Overfull \vbox (40.21814pt too high) detected at line 646
+ []
+
+[32
+
+ <./img/decreasekeyB.png (PNG copy)>]
+Underfull \hbox (badness 7362) in paragraph at lines 682--682
+[] []\OT1/cmss/bx/n/10 if \OT1/cmss/m/n/10 temp.key $\OML/cmm/m/it/10 <$ \OT1/c
+mss/m/n/10 temp.parent.key
+ []
+
+<./img/decreasekeyC.png, id=1087, 803.0pt x 547.04375pt>
+File: ./img/decreasekeyC.png Graphic file (type png)
+
+<use ./img/decreasekeyC.png>
+Package pdftex.def Info: ./img/decreasekeyC.png used on input line 682.
+(pdftex.def)             Requested size: 334.12099pt x 227.62204pt.
+
+Overfull \hbox (120.72533pt too wide) in paragraph at lines 682--682
+ [] 
+ []
+
+
+Overfull \hbox (19.91682pt too wide) detected at line 682
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+
+Overfull \vbox (40.21814pt too high) detected at line 682
+ []
+
 [33
+
+ <./img/decreasekeyC.png (PNG copy)>]
+Underfull \hbox (badness 7362) in paragraph at lines 718--718
+[] []\OT1/cmss/bx/n/10 if \OT1/cmss/m/n/10 temp.key $\OML/cmm/m/it/10 <$ \OT1/c
+mss/m/n/10 temp.parent.key
+ []
+
+<./img/decreasekeyD.png, id=1118, 803.0pt x 547.04375pt>
+File: ./img/decreasekeyD.png Graphic file (type png)
+
+<use ./img/decreasekeyD.png>
+Package pdftex.def Info: ./img/decreasekeyD.png used on input line 718.
+(pdftex.def)             Requested size: 334.12099pt x 227.62204pt.
+
+Overfull \hbox (120.72533pt too wide) in paragraph at lines 718--718
+ [] 
+ []
+
+
+Overfull \hbox (19.91682pt too wide) detected at line 718
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+
+Overfull \vbox (40.21814pt too high) detected at line 718
+ []
+
+[34
+
+ <./img/decreasekeyD.png (PNG copy)>]
+File: ./img/postmerge.png Graphic file (type png)
+ <use ./img/postmerge.png>
+Package pdftex.def Info: ./img/postmerge.png used on input line 746.
+(pdftex.def)             Requested size: 189.5472pt x 142.26378pt.
+
+Overfull \vbox (24.19313pt too high) detected at line 746
+ []
+
+[35
+
+] (./Presentation.toc) [36
+
+]
+Overfull \hbox (13.2214pt too wide) in paragraph at lines 771--771
+ [] 
+ []
+
+[37
 
 ] (./Presentation.bbl
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
 (Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 4.
 
-) [34
+) [38
 
 ]
 \tf@nav=\write6
@@ -1673,11 +1742,11 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
 \tf@snm=\write8
 \openout8 = `Presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 721.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 721.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 780.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 780.
  (./Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 721.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 721.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 780.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 780.
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
 (rerunfilecheck)             Checksum: 77B2288C3A04277AC019A14858141635;267.
 
@@ -1688,13 +1757,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 721.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 780.
  ) 
 Here is how much of TeX's memory you used:
- 17517 strings out of 493315
- 325763 string characters out of 6137904
+ 17558 strings out of 493315
+ 326418 string characters out of 6137904
  402600 words of memory out of 5000000
- 20437 multiletter control sequences out of 15000+600000
+ 20465 multiletter control sequences out of 15000+600000
  14215 words of font info for 53 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,15n,53p,432b,986s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1710,10 +1779,10 @@ sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
 r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 /local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/l
 ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Presentation.pdf (34 pages, 834782 bytes).
+Output written on Presentation.pdf (38 pages, 942521 bytes).
 PDF statistics:
- 1208 PDF objects out of 1440 (max. 8388607)
- 1107 compressed objects within 12 object streams
- 76 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1338 PDF objects out of 1440 (max. 8388607)
+ 1227 compressed objects within 13 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 259 words of extra memory for PDF output out of 10000 (max. 10000000)
 

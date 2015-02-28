@@ -323,6 +323,7 @@
       \REQUIRE Binomialheap merge\_heap
       \FOR{each \textit{binomialtree} in merge\_heap}
         \STATE this\_heap.insert(binomialtree.root)
+        \STATE merge binomial trees within this\_heap if necessary
       \ENDFOR
     \end{algorithmic}
   \end{algorithm}
@@ -330,15 +331,73 @@
   \begin{columns}[T] % the "c" option specifies center vertical alignment
     \begin{column}[T]{5.5cm} % alternative top-align that's better for graphics
        \begin{figure}
-        \includegraphics[height=4.35cm]{./img/joinorig.png}
+        % \caption{this\_heap}
+        \includegraphics[height=4.25cm]{./img/joinorig.png}
       \end{figure}
     \end{column}
-    \begin{column}[T]{5.5cm} % alternative top-align that's better for graphics
+    \begin{column}[T]{8.5cm} % alternative top-align that's better for graphics
       \begin{figure}
-        \includegraphics[height=4.35cm]{./img/joinnew.png}
+        % \caption{merge\_heap}
+        \includegraphics[height=4.25cm]{./img/joinnew.png}
       \end{figure}
     \end{column}
   \end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Standard Functions: Join}
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{8cm} % alternative top-align that's better for graphics
+       \begin{figure}
+        \includegraphics[height=2.5cm]{./img/joinnew2.png}
+      \end{figure}
+    \end{column}
+    \begin{column}[T]{6cm} % alternative top-align that's better for graphics
+       
+    \end{column}
+  \end{columns}
+
+  \begin{figure}
+    \includegraphics[height=6cm]{./img/joinorig.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Standard Functions: Join}
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{8cm} % alternative top-align that's better for graphics
+       \begin{figure}
+        \includegraphics[height=2.5cm]{./img/joinnew3.png}
+      \end{figure}
+    \end{column}
+    \begin{column}[T]{6cm} % alternative top-align that's better for graphics
+       
+    \end{column}
+  \end{columns}
+
+  \begin{figure}
+    \includegraphics[height=6cm]{./img/joiningA.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Standard Functions: Join}
+
+  \begin{figure}
+    \includegraphics[height=6cm]{./img/joiningB.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Standard Functions: Join}
+
+  \begin{figure}
+    \includegraphics[height=6cm]{./img/postjoin.png}
+  \end{figure}
 
 \end{frame}
 
