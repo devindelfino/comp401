@@ -233,7 +233,7 @@
 \end{frame}
 
 \section{Standard Functions} % ==========================================================================
-% Merge ------------------------------------------------
+% Merge ------------------------------------------------------------------------------------------------
 % during slide 1, draw merged output
 \begin{frame}
 \frametitle{Standard Functions: Merge}
@@ -309,15 +309,40 @@
 
 \end{frame}
 
-% Join ------------------------------------------------
+% Join ------------------------------------------------------------------------------------------------
 \begin{frame}
 \frametitle{Standard Functions: Join}
   \begin{itemize}
-    \item
+    \item Joins one Binomial Heap into another Binomial Heap. 
   \end{itemize}
+
+  \begin{algorithm}[H]
+    \small
+    \caption{BinomialHeap : Join}
+    \begin{algorithmic}
+      \REQUIRE Binomialheap merge\_heap
+      \FOR{each \textit{binomialtree} in merge\_heap}
+        \STATE this\_heap.insert(binomialtree.root)
+      \ENDFOR
+    \end{algorithmic}
+  \end{algorithm}
+
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{5.5cm} % alternative top-align that's better for graphics
+       \begin{figure}
+        \includegraphics[height=4.35cm]{./img/joinorig.png}
+      \end{figure}
+    \end{column}
+    \begin{column}[T]{5.5cm} % alternative top-align that's better for graphics
+      \begin{figure}
+        \includegraphics[height=4.35cm]{./img/joinnew.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+
 \end{frame}
 
-% Insert ------------------------------------------------
+% Insert ------------------------------------------------------------------------------------------------
 \begin{frame}
 \frametitle{Standard Functions: Insert}
   \begin{itemize}
@@ -326,7 +351,7 @@
 
    \begin{algorithm}[H]
         \small
-        \caption{BinomialHeap : Insert ($O(\textit{log n})$)}
+        \caption{BinomialHeap : Insert}
         \begin{algorithmic}
           \REQUIRE int key
           \STATE BinomialHeap temp\_heap $\leftarrow$ new BinomialHeap(key)
@@ -666,13 +691,24 @@
 \begin{frame}
 \frametitle{Uses of Binomial Heaps}
   \begin{itemize}
-    \item A \alert{Binomial Heap} is a collection of binomial trees that satisfy the following two binomial heap properties:
-      \begin{enumerate}
-        \item The key of any node is greater than or equal to the key of its parent (minimum-heap property).
-        \item There cannot be two binomial trees of the same order.
-      \end{enumerate}
-    % \item Binomial heaps are used to implement priority queues.
+    \item Binomial Heaps are used to implement priority queues
+    \item Priority queues can be used in applications that manage network bandwidth or manage events in a discrete even simulation.
+    \item Priority queues can also be used in various algorithms including heapsort, Dijkstra's shortest-path algorithm, Prim's minimum spanning tree algorithm, and Huffman Encoding.
   \end{itemize}
+
+  \begin{center}
+    \begin{tabular}{ | c || c | c | c | c | }
+      \hline
+      Operation & Linked List & Binary & d-ary & Binomial \\ \hline
+      FindMinimum & $O(n)$ & $O(1)$ & $O(1)$ & $O(\textit{log n})$ \\ \hline
+      Insert & $O(\textit{log n})$ & $O(\textit{log n})$ & $O(log_d \textit{ n})$ & $O(\textit{log n})$ \\ \hline
+      Join & $O(1)$ & $O(n)$ & $O(n)$ & $O(\textit{log n})$ \\ \hline
+      DeleteMinimum & $O(n)$ & $O(\textit{log n})$ & $O(\textit{d }log_d \textit{ n})$ & $O(\textit{log n})$ \\ \hline
+      DecreaseKey & $O(1)$ & $O(\textit{log n})$ & $O(log_d \textit{ n})$ & $O(\textit{log n})$ \\ \hline
+      Delete & $O(1)$ & $O(\textit{log n})$ & $O(\textit{d }log_d \textit{ n})$ & $O(\textit{log n})$ \\ \hline
+      \hline
+    \end{tabular}
+\end{center}
 \end{frame}
 
 % References ------------------------------------------------
