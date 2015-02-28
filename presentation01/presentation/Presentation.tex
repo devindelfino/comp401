@@ -321,10 +321,69 @@
 \begin{frame}
 \frametitle{Standard Functions: Insert}
   \begin{itemize}
-    \item
+    \item Inserts either an integer or an existing node into a Binomial Heap.
   \end{itemize}
+
+   \begin{algorithm}[H]
+        \small
+        \caption{BinomialHeap : Insert ($O(\textit{log n})$)}
+        \begin{algorithmic}
+          \REQUIRE int key
+          \STATE BinomialHeap temp\_heap $\leftarrow$ new BinomialHeap(key)
+          \STATE this\_heap.join(temp\_heap)
+        \end{algorithmic}
+        \end{algorithm}
+
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{8cm} % alternative top-align that's better for graphics
+       \begin{figure}
+        \includegraphics[height=4.35cm]{./img/preinsert.png}
+      \end{figure}
+    \end{column}
+    \begin{column}[T]{2cm} % alternative top-align that's better for graphics
+      \begin{figure}
+        \includegraphics[height=4.35cm]{./img/toinsert.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
+\begin{frame}
+\frametitle{Standard Functions: Insert}
+
+  \begin{figure}
+    \includegraphics[height=6cm]{./img/insertA.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Standard Functions: Insert}
+
+  \begin{figure}
+    \includegraphics[height=6cm]{./img/insertB.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Standard Functions: Insert}
+
+  \begin{figure}
+    \includegraphics[height=6cm]{./img/insertC.png}
+  \end{figure}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Standard Functions: Insert}
+
+  \begin{figure}
+    \includegraphics[height=7cm]{./img/insertD.png}
+  \end{figure}
+
+\end{frame}
 % DeleteMinimum ------------------------------------------------
 \begin{frame}
 \frametitle{Standard Functions: DeleteMinimum}
