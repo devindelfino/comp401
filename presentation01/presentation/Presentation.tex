@@ -329,11 +329,11 @@
 \begin{frame}
 \frametitle{Standard Functions: DeleteMinimum}
   \begin{itemize}
-    \item
+    \item Deletes the node with the smallest key from the Binomial Heap.
   \end{itemize}
 
   \begin{columns}[T] % the "c" option specifies center vertical alignment
-    \begin{column}[T]{6cm} % alternative top-align that's better for graphics
+    \begin{column}[T]{8cm} % alternative top-align that's better for graphics
         \begin{algorithm}[H]
         \small
         \caption{BinomialHeap : DeleteMinimum}
@@ -349,19 +349,91 @@
         \end{algorithmic}
         \end{algorithm}
     \end{column}
-    \begin{column}[T]{5.5cm} % alternative top-align that's better for graphics
-      \begin{figure}
-        \includegraphics[height=5cm]{./img/postmerge.png}
-      \end{figure}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Standard Functions: DeleteMinimum}
+
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{8cm} % alternative top-align that's better for graphics
+        \begin{algorithm}[H]
+        \small
+        \caption{BinomialHeap : DeleteMinimum}
+        \begin{algorithmic}
+          \REQUIRE None
+          \STATE Node* deleted\_node $\leftarrow$ this\_heap.FindMinimum()
+          \STATE BinomialHeap temp\_heap $\leftarrow$ new BinomialHeap() ...
+        \end{algorithmic}
+        \end{algorithm}
     \end{column}
   \end{columns}
+
+  \begin{figure}
+    \includegraphics[height=9cm]{./img/deleteminA.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Standard Functions: DeleteMinimum}
+
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{8cm} % alternative top-align that's better for graphics
+        \begin{algorithm}[H]
+        \small
+        \caption{BinomialHeap : DeleteMinimum, cont.}
+        \begin{algorithmic}
+          \FOR{each \textit{child} in delete\_node}
+              \STATE temp\_heap.insert(child)
+          \ENDFOR ...
+        \end{algorithmic}
+        \end{algorithm}
+    \end{column}     
+  \end{columns}
+
+  \begin{figure}
+    \includegraphics[height=9cm]{./img/deleteminB.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Standard Functions: DeleteMinimum, cont.}
+
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{8cm} % alternative top-align that's better for graphics
+        \begin{algorithm}[H]
+        \small
+        \caption{BinomialHeap : DeleteMinimum}
+        \begin{algorithmic}
+          \STATE this\_heap.join(temp\_heap)
+        \end{algorithmic}
+        \end{algorithm}
+    \end{column}
+  \end{columns}
+
+
+  \begin{columns}[T] % the "c" option specifies center vertical alignment
+    \begin{column}[T]{3.75cm} % alternative top-align that's better for graphics
+        \begin{figure}
+          \caption{this\_heap}
+          \includegraphics[height=5cm]{./img/postdeleteminA.png}
+        \end{figure}
+    \end{column}
+    \begin{column}[T]{3.75cm} % alternative top-align that's better for graphics
+        \begin{figure}
+          \caption{temp\_heap}
+          \includegraphics[height=5cm]{./img/postdeleteminB.png}
+        \end{figure}
+    \end{column}
+  \end{columns}
+
 \end{frame}
 
 % DecreaseKey ------------------------------------------------------------------------------------------
 \begin{frame}
 \frametitle{Standard Functions: DecreaseKey}
   \begin{itemize}
-    \item Decreases the key of a given node in the Binomial Heap
+    \item Decreases the key of a given node in the Binomial Heap 
   \end{itemize}
 
   \begin{columns}[T] % the "c" option specifies center vertical alignment

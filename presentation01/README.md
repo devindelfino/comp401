@@ -1,6 +1,7 @@
 Presentation 01: Binomial Heaps
 ===============================
 *Devin Delfino*
+
 *March 5, 2015*
 
 Pre-Presentation Exercises

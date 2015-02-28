@@ -3,4 +3,4 @@
 \beamer@sectionintoc {2}{Binomial Heaps}{7}{0}{2}
 \beamer@sectionintoc {3}{Implementation Structure}{12}{0}{3}
 \beamer@sectionintoc {4}{Standard Functions}{14}{0}{4}
-\beamer@sectionintoc {5}{Uses of Binomial Heaps}{25}{0}{5}
+\beamer@sectionintoc {5}{Uses of Binomial Heaps}{28}{0}{5}
