@@ -217,6 +217,7 @@
     \includegraphics[height=7.5cm]{./img/bheap.png}
   \end{figure}
 
+    % explain the log n (surrounded by powers of 2)
 % explain both bullet points and show hidden caption
 \end{frame}
 
@@ -337,19 +338,14 @@
         \small
         \caption{BinomialHeap : DeleteMinimum}
         \begin{algorithmic}
-          \REQUIRE Node* root\_A, Node* root\_B
+          \REQUIRE None
 
-          \IF{root\_A.key $\leq$ root\_B.key}
-            \STATE root\_B.right\_sibling $\leftarrow$ root\_A.child
-            \STATE root\_A.child $\leftarrow$ root\_B
-            \STATE root\_B.parent $\leftarrow$ root\_A
-            \RETURN root\_A
-          \ELSE
-            \STATE root\_A.right\_sibling $\leftarrow$ root\_B.child
-            \STATE root\_B.child $\leftarrow$ root\_A
-            \STATE root\_A.parent $\leftarrow$ root\_B
-            \RETURN root\_B
-          \ENDIF
+          \STATE Node* deleted\_node $\leftarrow$ this\_heap.FindMinimum()
+          \STATE BinomialHeap temp\_heap $\leftarrow$ new BinomialHeap()
+          \FOR{each \textit{child} in delete\_node}
+              \STATE temp\_heap.insert(child)
+          \ENDFOR
+          \STATE this\_heap.join(temp\_heap)
         \end{algorithmic}
         \end{algorithm}
     \end{column}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  26 FEB 2015 18:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  28 FEB 2015 11:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1303,15 +1303,15 @@ ng (PNG copy)>] <./img/bheap.png, id=383, 803.0pt x 547.04375pt>
 File: ./img/bheap.png Graphic file (type png)
 
 <use ./img/bheap.png>
-Package pdftex.def Info: ./img/bheap.png used on input line 221.
+Package pdftex.def Info: ./img/bheap.png used on input line 222.
 (pdftex.def)             Requested size: 313.24226pt x 213.39566pt.
 
-Overfull \hbox (5.9524pt too wide) in paragraph at lines 221--221
+Overfull \hbox (5.9524pt too wide) in paragraph at lines 222--222
  [] 
  []
 
 
-Overfull \vbox (71.65843pt too high) detected at line 221
+Overfull \vbox (71.65843pt too high) detected at line 222
  []
 
 [11
@@ -1323,10 +1323,10 @@ Overfull \vbox (71.65843pt too high) detected at line 221
 File: ./img/structimp.png Graphic file (type png)
 
 <use ./img/structimp.png>
-Package pdftex.def Info: ./img/structimp.png used on input line 232.
+Package pdftex.def Info: ./img/structimp.png used on input line 233.
 (pdftex.def)             Requested size: 343.6985pt x 170.71652pt.
 
-Overfull \hbox (36.40863pt too wide) in paragraph at lines 232--232
+Overfull \hbox (36.40863pt too wide) in paragraph at lines 233--233
  [] 
  []
 
@@ -1339,10 +1339,10 @@ Overfull \hbox (36.40863pt too wide) in paragraph at lines 232--232
 File: ./img/premerge.png Graphic file (type png)
 
 <use ./img/premerge.png>
-Package pdftex.def Info: ./img/premerge.png used on input line 272.
+Package pdftex.def Info: ./img/premerge.png used on input line 273.
 (pdftex.def)             Requested size: 189.5472pt x 142.26378pt.
 
-Overfull \hbox (33.05705pt too wide) in paragraph at lines 272--272
+Overfull \hbox (33.05705pt too wide) in paragraph at lines 273--273
  [] 
  []
 
@@ -1353,10 +1353,10 @@ Overfull \hbox (33.05705pt too wide) in paragraph at lines 272--272
 File: ./img/postmerge.png Graphic file (type png)
 
 <use ./img/postmerge.png>
-Package pdftex.def Info: ./img/postmerge.png used on input line 309.
+Package pdftex.def Info: ./img/postmerge.png used on input line 310.
 (pdftex.def)             Requested size: 189.5472pt x 142.26378pt.
 
-Overfull \hbox (33.05705pt too wide) in paragraph at lines 309--309
+Overfull \hbox (33.05705pt too wide) in paragraph at lines 310--310
  [] 
  []
 
@@ -1367,19 +1367,23 @@ Overfull \hbox (33.05705pt too wide) in paragraph at lines 309--309
 ] [18
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
+[] []\OT1/cmss/m/n/10 Node* deleted[]node $\OMS/cmss/m/n/10  $
+ []
+
 File: ./img/postmerge.png Graphic file (type png)
- <use ./img/postmerge.png>
-Package pdftex.def Info: ./img/postmerge.png used on input line 362.
+<use ./img/postmerge.png>
+Package pdftex.def Info: ./img/postmerge.png used on input line 358.
 (pdftex.def)             Requested size: 189.5472pt x 142.26378pt.
 
-Overfull \hbox (33.05705pt too wide) in paragraph at lines 362--362
+Overfull \hbox (33.05705pt too wide) in paragraph at lines 358--358
  [] 
  []
 
 [19
 
 ]
-Underfull \hbox (badness 7362) in paragraph at lines 399--399
+Underfull \hbox (badness 7362) in paragraph at lines 395--395
 [] []\OT1/cmss/bx/n/10 if \OT1/cmss/m/n/10 temp.key $\OML/cmm/m/it/10 <$ \OT1/c
 mss/m/n/10 temp.parent.key
  []
@@ -1388,26 +1392,26 @@ mss/m/n/10 temp.parent.key
 File: ./img/decreasekeyA.png Graphic file (type png)
 
 <use ./img/decreasekeyA.png>
-Package pdftex.def Info: ./img/decreasekeyA.png used on input line 399.
+Package pdftex.def Info: ./img/decreasekeyA.png used on input line 395.
 (pdftex.def)             Requested size: 334.12099pt x 227.62204pt.
 
-Overfull \hbox (134.9517pt too wide) in paragraph at lines 399--399
+Overfull \hbox (134.9517pt too wide) in paragraph at lines 395--395
  [] 
  []
 
 
-Overfull \hbox (5.69044pt too wide) detected at line 399
+Overfull \hbox (5.69044pt too wide) detected at line 395
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 
-Overfull \vbox (40.21814pt too high) detected at line 399
+Overfull \vbox (40.21814pt too high) detected at line 395
  []
 
 [20
 
  <./img/decreasekeyA.png (PNG copy)>]
-Underfull \hbox (badness 7362) in paragraph at lines 435--435
+Underfull \hbox (badness 7362) in paragraph at lines 431--431
 [] []\OT1/cmss/bx/n/10 if \OT1/cmss/m/n/10 temp.key $\OML/cmm/m/it/10 <$ \OT1/c
 mss/m/n/10 temp.parent.key
  []
@@ -1416,26 +1420,26 @@ mss/m/n/10 temp.parent.key
 File: ./img/decreasekeyB.png Graphic file (type png)
 
 <use ./img/decreasekeyB.png>
-Package pdftex.def Info: ./img/decreasekeyB.png used on input line 435.
+Package pdftex.def Info: ./img/decreasekeyB.png used on input line 431.
 (pdftex.def)             Requested size: 334.12099pt x 227.62204pt.
 
-Overfull \hbox (120.72533pt too wide) in paragraph at lines 435--435
+Overfull \hbox (120.72533pt too wide) in paragraph at lines 431--431
  [] 
  []
 
 
-Overfull \hbox (19.91682pt too wide) detected at line 435
+Overfull \hbox (19.91682pt too wide) detected at line 431
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 
-Overfull \vbox (40.21814pt too high) detected at line 435
+Overfull \vbox (40.21814pt too high) detected at line 431
  []
 
 [21
 
  <./img/decreasekeyB.png (PNG copy)>]
-Underfull \hbox (badness 7362) in paragraph at lines 471--471
+Underfull \hbox (badness 7362) in paragraph at lines 467--467
 [] []\OT1/cmss/bx/n/10 if \OT1/cmss/m/n/10 temp.key $\OML/cmm/m/it/10 <$ \OT1/c
 mss/m/n/10 temp.parent.key
  []
@@ -1444,26 +1448,26 @@ mss/m/n/10 temp.parent.key
 File: ./img/decreasekeyC.png Graphic file (type png)
 
 <use ./img/decreasekeyC.png>
-Package pdftex.def Info: ./img/decreasekeyC.png used on input line 471.
+Package pdftex.def Info: ./img/decreasekeyC.png used on input line 467.
 (pdftex.def)             Requested size: 334.12099pt x 227.62204pt.
 
-Overfull \hbox (120.72533pt too wide) in paragraph at lines 471--471
+Overfull \hbox (120.72533pt too wide) in paragraph at lines 467--467
  [] 
  []
 
 
-Overfull \hbox (19.91682pt too wide) detected at line 471
+Overfull \hbox (19.91682pt too wide) detected at line 467
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 
-Overfull \vbox (40.21814pt too high) detected at line 471
+Overfull \vbox (40.21814pt too high) detected at line 467
  []
 
 [22
 
  <./img/decreasekeyC.png (PNG copy)>]
-Underfull \hbox (badness 7362) in paragraph at lines 507--507
+Underfull \hbox (badness 7362) in paragraph at lines 503--503
 [] []\OT1/cmss/bx/n/10 if \OT1/cmss/m/n/10 temp.key $\OML/cmm/m/it/10 <$ \OT1/c
 mss/m/n/10 temp.parent.key
  []
@@ -1472,20 +1476,20 @@ mss/m/n/10 temp.parent.key
 File: ./img/decreasekeyD.png Graphic file (type png)
 
 <use ./img/decreasekeyD.png>
-Package pdftex.def Info: ./img/decreasekeyD.png used on input line 507.
+Package pdftex.def Info: ./img/decreasekeyD.png used on input line 503.
 (pdftex.def)             Requested size: 334.12099pt x 227.62204pt.
 
-Overfull \hbox (120.72533pt too wide) in paragraph at lines 507--507
+Overfull \hbox (120.72533pt too wide) in paragraph at lines 503--503
  [] 
  []
 
 
-Overfull \hbox (19.91682pt too wide) detected at line 507
+Overfull \hbox (19.91682pt too wide) detected at line 503
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 
-Overfull \vbox (40.21814pt too high) detected at line 507
+Overfull \vbox (40.21814pt too high) detected at line 503
  []
 
 [23
@@ -1493,10 +1497,10 @@ Overfull \vbox (40.21814pt too high) detected at line 507
  <./img/decreasekeyD.png (PNG copy)>]
 File: ./img/postmerge.png Graphic file (type png)
  <use ./img/postmerge.png>
-Package pdftex.def Info: ./img/postmerge.png used on input line 535.
+Package pdftex.def Info: ./img/postmerge.png used on input line 531.
 (pdftex.def)             Requested size: 189.5472pt x 142.26378pt.
 
-Overfull \vbox (24.19313pt too high) detected at line 535
+Overfull \vbox (24.19313pt too high) detected at line 531
  []
 
 [24
@@ -1522,11 +1526,11 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
 \tf@snm=\write8
 \openout8 = `Presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 558.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 558.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 554.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 554.
  (./Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 558.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 558.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 554.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 554.
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
 (rerunfilecheck)             Checksum: 77B2288C3A04277AC019A14858141635;267.
 
@@ -1537,7 +1541,7 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 558.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 554.
  ) 
 Here is how much of TeX's memory you used:
  17429 strings out of 493315
@@ -1559,7 +1563,7 @@ sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
 r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 /local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/l
 ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Presentation.pdf (27 pages, 560437 bytes).
+Output written on Presentation.pdf (27 pages, 560830 bytes).
 PDF statistics:
  979 PDF objects out of 1000 (max. 8388607)
  900 compressed objects within 9 object streams
