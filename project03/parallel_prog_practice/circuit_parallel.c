@@ -5,6 +5,7 @@
 
 int main (int argc, char *argv[]) {
 
+	double elapsed_time;
 	int solutions;
 	int globalsolutions;
 	int i;
@@ -20,12 +21,17 @@ int main (int argc, char *argv[]) {
 	MPI_Comm_rank(MPI_COMM_WORLD, &id);	// determine the rank within a communicator
 	MPI_Comm_size(MPI_COMM_WORLD, &p);	// determine the total number of processes in a communicator
 
+	MPI_Barrier(MPI_COMM_WORLD);
+	elapsed_time = MPI_Wtime();
+
 	solutions = 0;
 	for(i = id; i < 65536; i += p) {
 		solutions += check_circuit(id, i);
 	}
 
 	MPI_Reduce(&solutions, &globalsolutions, 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
+	elapsed_time = MPI_Wtime() - elapsed_time;
+
 	printf("Process %d is done\n", id);
 	fflush(stdout);
 	MPI_Finalize(); 		// shuts off MPI
@@ -33,6 +39,7 @@ int main (int argc, char *argv[]) {
 	if(id==0) {
 		printf("Solutions: %d\n", globalsolutions);
 	}
+	printf("Time Elapsed: %f seconds", elapsed_time);
 	return 0;
 }
 
@@ -55,10 +62,10 @@ int check_circuit(int id, int z) {
 		&& (v[9] || v[11]) && (v[10] || v[11])
 		&& (v[12] || v[13]) && (v[13] || !v[14])
 		&& (v[14] || v[15])) {
-		printf("%d) %d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d\n", id,
-			v[0],v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],
-			v[10],v[11],v[12],v[13],v[14], v[15]);
-		fflush(stdout);
+		// printf("%d) %d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d\n", id,
+			// v[0],v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],
+			// v[10],v[11],v[12],v[13],v[14], v[15]);
+		// fflush(stdout);
 		return 1;
 	}
 	else {

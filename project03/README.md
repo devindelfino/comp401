@@ -68,7 +68,7 @@ Foster's Design Methodology
 
 Message-Passing Programming (Reference 1, Chapter 4)
 --------------------------------------------------
-
+* rank of a process is its position in the overall order
 MPI Functions
 -------------
 * MPI_Init() - Initialize MPI
