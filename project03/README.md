@@ -28,6 +28,7 @@ The project03 directory contains the following files:
 
 In the *project03/* directory:
 
+
 Parallel Algorithm Design (Reference 1, Chapter 3)
 --------------------------------------------------
 * The task/channel model represetns a parallel computation as a set of tass that may interact with each other by sending messages through channels
@@ -79,6 +80,9 @@ MPI Functions
 * MPI_Barrier() - performs a barrier synchronization
 * MPI_Wtime() - determines the time
 * MPI_Wtick() - finds the accuracy of the timer
+
+The Sieve of Eratosthenes (Reference 1, Chapter 5)
+--------------------------------------------------
 
 References
 ----------

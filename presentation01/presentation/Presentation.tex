@@ -593,7 +593,7 @@
               \IF{temp.key $<$ temp.parent.key}
                 \STATE swap(temp.key, temp.parent.key)
               \ELSE
-                \STATE break
+                \STATE exit loop
               \ENDIF
               \STATE temp $\leftarrow$ temp.parent
           \ENDWHILE
@@ -629,7 +629,7 @@
               \IF{temp.key $<$ temp.parent.key}
                 \STATE swap(temp.key, temp.parent.key)
               \ELSE
-                \STATE break
+                \STATE exit loop
               \ENDIF
               \STATE temp $\leftarrow$ temp.parent
           \ENDWHILE
@@ -665,7 +665,7 @@
               \IF{temp.key $<$ temp.parent.key}
                 \STATE swap(temp.key, temp.parent.key)
               \ELSE
-                \STATE break
+                \STATE exit loop
               \ENDIF
               \STATE temp $\leftarrow$ temp.parent
           \ENDWHILE
@@ -701,7 +701,7 @@
               \IF{temp.key $<$ temp.parent.key}
                 \STATE swap(temp.key, temp.parent.key)
               \ELSE
-                \STATE break
+                \STATE exit loop
               \ENDIF
               \STATE temp $\leftarrow$ temp.parent
           \ENDWHILE
@@ -751,7 +751,7 @@
 \frametitle{Uses of Binomial Heaps}
   \begin{itemize}
     \item Binomial Heaps are used to implement priority queues
-    \item Priority queues can be used in applications that manage network bandwidth or manage events in a discrete even simulation.
+    \item Priority queues can be used in applications that manage network bandwidth or manage events in a discrete event simulation.
     \item Priority queues can also be used in various algorithms including heapsort, Dijkstra's shortest-path algorithm, Prim's minimum spanning tree algorithm, and Huffman Encoding.
   \end{itemize}
 
