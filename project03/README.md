@@ -83,6 +83,24 @@ MPI Functions
 
 The Sieve of Eratosthenes (Reference 1, Chapter 5)
 --------------------------------------------------
+Data Decomposition Options
+
+####Interleaved
+
+* process 0 handles 2, 2 + p, 2 + 2p, ..., process 1 handles 3, 3 + p, 3 + 2p, ...
+* Disadvantage - Unbalanced work between processes, requires some reduction operation
+
+####Block
+
+* Key Question 1: What is the range of elements controlled y a particular process?
+* Key Question 2: Which process controls a particular element?
+* If the array has n elements and there are p available processes, assign each process a block of floor(n/p) or ceiling(n/p) elements ( if n is divisible by p, then each process gets assigned n/p elements)
+
+######Block Allocation Method
+
+1. The first element controlled by process i is floor( (i*n)/p ) 
+2. The final element controlled by process i is floor( ((i+1)*n)/p ) - 1
+3. The process controlling a particular array element j is floor( (p(j+1)-1)/n )
 
 References
 ----------
