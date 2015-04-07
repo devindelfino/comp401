@@ -6,7 +6,7 @@
 \usepackage{algorithmic}
 
 % Algorithms
-\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicrequire}{\textbf{Summary:}}
 \renewcommand{\algorithmicensure}{\textbf{Output:}}
 \algsetup{linenosize=\small}
 
@@ -57,22 +57,14 @@
 \begin{frame}
 \frametitle{The Sequential Algorithm}
 	\begin{algorithm}[H]
-        \small
-        \caption{Merge}
+        \caption{The Sieve of Eratosthenes}
         \begin{algorithmic}
-          \REQUIRE Node* root\_A, Node* root\_B
-
-          \IF{root\_A.key $\leq$ root\_B.key}
-            \STATE root\_B.right\_sibling $\leftarrow$ root\_A.child
-            \STATE root\_A.child $\leftarrow$ root\_B
-            \STATE root\_B.parent $\leftarrow$ root\_A
-            \RETURN root\_A
-          \ELSE
-            \STATE root\_A.right\_sibling $\leftarrow$ root\_B.child
-            \STATE root\_B.child $\leftarrow$ root\_A
-            \STATE root\_A.parent $\leftarrow$ root\_B
-            \RETURN root\_B
-          \ENDIF
+          \REQUIRE Finds all primes between $2$ and $n$, inclusive
+          \STATE Set $k$ equal to the first prime number, $2$
+          \WHILE{$k^2 \leq n$}
+            \STATE Starting with $k^2$, mark each multiple of of $k$ between $k^2$ and $n$
+            \STATE Set $k$ to the next unmarked number in the array
+          \ENDWHILE
         \end{algorithmic}
         \end{algorithm}
 \end{frame}
@@ -81,40 +73,32 @@
 % Parallel Programming Introduction ------------------------------------------------
 \begin{frame}
 \frametitle{Binomial Trees: Examples}
-\begin{figure}
-        \caption{Example: $k = 3$, $d = 2$}
-        \includegraphics[height=3cm]{./img/order3.png}
-      \end{figure}
+
 \end{frame}
 
 % MPI Introduction ------------------------------------------------
 \begin{frame}
-\frametitle{Binomial Trees: Examples}
-\begin{figure}
-        \caption{Example: $k = 3$, $d = 2$}
-        \includegraphics[height=3cm]{./img/order3.png}
-      \end{figure}
+\frametitle{Message Passing Interface (MPI)}
+
 \end{frame}
 
 % Parallel Programming Design ------------------------------------------------
 \begin{frame}
-\frametitle{Parallel Programming Design}
-\begin{figure}
-        \caption{Example: $k = 3$, $d = 2$}
-        \includegraphics[height=3cm]{./img/order3.png}
-      \end{figure}
+
 \end{frame}
 
 \section{The Parallel Algorithm} % ==========================================================================
 % Block Allocation ------------------------------------------------
 \begin{frame}
 \frametitle{The Parallel Algorithm: Block Allocation}
-  
+  \begin{itemize}
+    \item The main question is how to break up the problem into multiple tasks
+  \end{itemize}
 \end{frame}
 
 % Translating Sequential Algorithm ------------------------------------------------
 \begin{frame}
-\frametitle{The Parallel Algorithm: Developing Algorithm}
+\frametitle{Developing the Algorithm}
   
 \end{frame}
 
