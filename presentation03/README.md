@@ -11,7 +11,6 @@ Pre-Presentation Exercises
 Table of Contents
 -----------------
 1. The seqential Sieve
-
 2. Introduction to Parallel Programming and MPI
 3. Parallel Algorithm Design
 4. The Parallel Sieve (block allocation, code, )

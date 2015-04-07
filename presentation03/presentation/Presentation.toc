@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.26pt}
+\beamer@sectionintoc {1}{Parallel Programming}{3}{0}{1}
+\beamer@sectionintoc {2}{Message Passing Interface (MPI)}{6}{0}{2}
+\beamer@sectionintoc {3}{The Sequential Algorithm}{9}{0}{3}
+\beamer@sectionintoc {4}{The Parallel Algorithm}{11}{0}{4}
+\beamer@sectionintoc {5}{Sequential vs. Parallel Comparison}{14}{0}{5}

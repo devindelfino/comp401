@@ -18,6 +18,7 @@
 % References
 \usepackage{url}
 \bibliographystyle{acm}
+
 \setbeamertemplate{bibliography item}[triangle]
 
 % Formatting
@@ -52,30 +53,39 @@
 \tableofcontents
 \end{frame}
 
-\section{The Sequential Algorithm} % ==========================================================================
-% The Sequential Sieve ------------------------------------------------
-\begin{frame}
-\frametitle{The Sequential Algorithm}
-	\begin{algorithm}[H]
-        \caption{The Sieve of Eratosthenes}
-        \begin{algorithmic}
-          \REQUIRE Finds all primes between $2$ and $n$, inclusive
-          \STATE Set $k$ equal to the first prime number, $2$
-          \WHILE{$k^2 \leq n$}
-            \STATE Starting with $k^2$, mark each multiple of of $k$ between $k^2$ and $n$
-            \STATE Set $k$ to the next unmarked number in the array
-          \ENDWHILE
-        \end{algorithmic}
-        \end{algorithm}
-\end{frame}
-
-\section{Parallel Programming and MPI} % ==========================================================================
+\section{Parallel Programming} % ==========================================================================
 % Parallel Programming Introduction ------------------------------------------------
 \begin{frame}
-\frametitle{Binomial Trees: Examples}
+\frametitle{Introduction}
 
+\begin{itemize}
+  \item \alert{Parallel Computing} is the use of multiple computers or processors to reduce the time needed to solve a single computational problem.
+  \item A \alert{task} is a single program including local memory and a collection of input/output ports.
+  \item A \alert{channel} is a message queue between two tasks used for communication
+\end{itemize}
+\end{frame}
+% share definitions and talk about analogy
+% workers = processors, job = program, tasks = tasks
+% sequential -> assign the entire job to one person
+% parallel -> divide the job into various tasks, assign the t tasks to p workers (maximize efficiency when t = p)
+%          -> communication may be needed between the workers, representing comm. channels
+
+% Foster's Design: Partitioning ------------------------------------------------
+\begin{frame}
+\frametitle{Ian Foster's Design Methodology}
+  \begin{enumerate}
+    \item \alert{Partitioning} - the process of dividing the computations and data into pieces.
+    \item \alert{Communication} - channels between tasks allow communication between them
+          \begin{itemize}
+            \item Local - a task's computation requires values from a small number of other tasks
+            \item Global - many tasks must contribute values to perform a computation
+          \end{itemize}
+    \item \alert{Agglomeration} - grouping tasks in order to improve performance and reduce overhead.
+    \item \alert{Mapping} - assigning processes or tasks to specific processors or computers
+  \end{enumerate}
 \end{frame}
 
+\section{Message Passing Interface (MPI)} % ==========================================================================
 % MPI Introduction ------------------------------------------------
 \begin{frame}
 \frametitle{Message Passing Interface (MPI)}
@@ -86,6 +96,26 @@
 \begin{frame}
 
 \end{frame}
+
+\section{The Sequential Algorithm} % ==========================================================================
+% The Sequential Sieve ------------------------------------------------
+\begin{frame}
+\frametitle{The Sequential Algorithm}
+  \begin{algorithm}[H]
+        \caption{The Sieve of Eratosthenes}
+        \begin{algorithmic}
+          \REQUIRE Finds all primes between $2$ and $n$, inclusive
+          \STATE Create a list of natural numbers $2$, $3$, ... , $n$, none of which are marked
+          \STATE Set $k$ equal to the first prime number, $2$
+          \WHILE{$k^2 \leq n$}
+            \STATE Mark all multiples of $k$ between $k^2$ and $n$
+            \STATE Set $k$ to the smallest unmarked number greater than the current $k$
+          \ENDWHILE
+        \end{algorithmic}
+        \end{algorithm}
+\end{frame}
+% Introduce steps
+% SHOW ANIMATION
 
 \section{The Parallel Algorithm} % ==========================================================================
 % Block Allocation ------------------------------------------------
