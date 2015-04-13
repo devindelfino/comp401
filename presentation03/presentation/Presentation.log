@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  7 APR 2015 15:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  12 APR 2015 21:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1139,35 +1139,16 @@ Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 (./Presentation.nav)
-Overfull \hbox (39.68895pt too wide) detected at line 45
-  [] [] [] [] [] []  
- []
-
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 47.
 
-
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
-
 [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-(./Presentation.toc)
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
+(./Presentation.toc) [2
 
-[2
-
-] (./Presentation.toc)
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
-
-[3
+] (./Presentation.toc) [3
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmss on input line 66.
@@ -1179,107 +1160,52 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbullet' on input line 66.
 
-
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
-
 [4
 
-]
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
+] [5
 
-[5
+] [6
 
-] (./Presentation.toc)
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
-
-[6
+] (./Presentation.toc) [7
 
 ]
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
+LaTeX Font Info:    Try loading font information for U+msa on input line 118.
 
-[7
-
-]
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
-
-[8
-
-] (./Presentation.toc)
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
-
-[9
-
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 116.
- (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 116.
+LaTeX Font Info:    Try loading font information for U+msb on input line 118.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
+) [8
 
-[10
+]
+(./Presentation.toc) [9
+
+] [10
+
+] [11
+
+] [12
+
+] [13
+
+] [14
+
+] [15
 
 ] (./Presentation.toc)
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
-
-[11
-
-]
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
-
-[12
-
-]
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
-
-[13
-
-] (./Presentation.toc)
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
-
-[14
-
-]
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
-
-[15
-
-]
-No file Presentation.bbl.
-
-Overfull \hbox (39.68895pt too wide) has occurred while \output is active
-  [] [] [] [] [] []  
- []
-
 [16
+
+] [17
+
+] (./Presentation.bbl
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 4.
+
+) [18
 
 ]
 \tf@nav=\write6
@@ -1291,13 +1217,13 @@ Overfull \hbox (39.68895pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `Presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
  (./Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 236.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 236.
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 2E8A9FB54A11770FCACED79B2AF85AFB;308.
+(rerunfilecheck)             Checksum: BBD07129A06E74EAF67A17D4D8CD1A8A;248.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1306,27 +1232,32 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 236.
  ) 
 Here is how much of TeX's memory you used:
- 17223 strings out of 493315
- 319853 string characters out of 6137904
- 397623 words of memory out of 5000000
- 20215 multiletter control sequences out of 15000+600000
- 11418 words of font info for 42 fonts, out of 8000000 for 9000
+ 17301 strings out of 493315
+ 322007 string characters out of 6137904
+ 399644 words of memory out of 5000000
+ 20284 multiletter control sequences out of 15000+600000
+ 16382 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,15n,53p,432b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on Presentation.pdf (16 pages, 97821 bytes).
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on Presentation.pdf (18 pages, 147332 bytes).
 PDF statistics:
- 601 PDF objects out of 1000 (max. 8388607)
- 558 compressed objects within 6 object streams
- 38 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 649 PDF objects out of 1000 (max. 8388607)
+ 600 compressed objects within 6 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
