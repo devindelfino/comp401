@@ -107,11 +107,11 @@
         \caption{The Sieve of Eratosthenes}
         \begin{algorithmic}
           \REQUIRE Finds all primes between $2$ and $n$, inclusive
-          \STATE Create a list of natural numbers $2$, $3$, ... , $n$, none of which are marked
-          \STATE Set $k$ equal to the first prime number, $2$
+          \STATE 1. Create a list of natural numbers $2$, $3$, ... , $n$, none of which are marked
+          \STATE 2. Set $k$ equal to the first prime number, $2$
           \WHILE{$k^2 \leq n$}
-            \STATE Mark all multiples of $k$ between $k^2$ and $n$
-            \STATE Set $k$ to the smallest unmarked number greater than the current $k$
+            \STATE 3a. Mark all multiples of $k$ between $k^2$ and $n$
+            \STATE 3b. Set $k$ to the smallest unmarked number greater than the current $k$
           \ENDWHILE
         \end{algorithmic}
         \end{algorithm}
@@ -145,7 +145,7 @@
 \begin{frame}
 \frametitle{The Parallel Algorithm: Block Decomposition, cont.}
   \begin{itemize}
-    \item $n$ Suppose is the size of array and $p$ is the number of processors
+    \item Suppose $n$ is the size of array and $p$ is the number of processors
     \item First element controlled by process $i$: $$\lfloor i n / p \rfloor$$
     \item Last element controlled by process $i$: $$\lfloor (i + 1) n / p \rfloor - 1$$
   \end{itemize}
@@ -153,21 +153,21 @@
 
 \begin{frame}
 \frametitle{Block Decomposition Example, $n = 121$, $p = 3$}
-    \alert{Process 0:}
+    \alert{Processor 0:}
     \begin{itemize}
     \item First index: $\lfloor (0) (121) / 3 \rfloor = 0$
     \item Last index: $\lfloor (0 + 1) 121 / 3 \rfloor - 1 = \lfloor 40\frac{1}{3} \rfloor - 1 = 39$
     \item Size: $\text{last - first + 1} = \lfloor n / p \rfloor = 40$.
     \end{itemize}
 
-    \alert{Process 1:}
+    \alert{Processor 1:}
     \begin{itemize}
     \item First index: $\lfloor (1) (121) / 3 \rfloor = \lfloor 40\frac{1}{3} \rfloor = 40$
     \item Last index: $\lfloor (1 + 1) 121 / 3 \rfloor - 1 = \lfloor 80\frac{2}{3} \rfloor - 1 = 79$
     \item Size: $\text{last - first + 1} = 40 = \lfloor n / p \rfloor$.
     \end{itemize}
 
-    \alert{Process 2:}
+    \alert{Processor 2:}
     \begin{itemize}
     \item First index: $\lfloor (2) (121) / 3 \rfloor = \lfloor 80\frac{2}{3} \rfloor = 80$
     \item Last index: $\lfloor (2 + 1) 121 / 3 \rfloor - 1 = \lfloor 121 \rfloor - 1 = 120$
@@ -182,10 +182,10 @@
 \alert{1. Create a list of natural numbers $2$, $3$, ... , $n$, none of which are marked}
 \begin{itemize}
   \item Each task handles a specific block of the entire array
-  \item Use the formulas to determine the numbers represented by the first and last elements of the block along with its size
-  \item Keep in mind the difference between the local index for the block and the global index for the entire array
+  % \item Use the formulas to determine the numbers represented by the first and last elements of the block along with its size
   \item To minimize communication between tasks, make task 0 responsible for finding the next value of $k$
   \item This can be done by ensuring $n/p > \sqrt{n}$
+  \item Keep in mind the difference between the local index for the block and the global index for the entire array
 \end{itemize}
 \end{frame}
 
@@ -220,10 +220,9 @@
 % Comparison: Seq vs. Par ------------------------------------------------
 \begin{frame}
 \frametitle{Sequential vs. Parallel}
-  % \begin{figure}
-  %   \caption{\textit{k} = 0}
-  %   \includegraphics[height=4cm]{./img/order0.png}
-  % \end{figure}
+  \begin{figure}
+    \includegraphics[height=7cm]{./sieve_benchmark.png}
+  \end{figure}
 \end{frame}
 
 % References ------------------------------------------------
