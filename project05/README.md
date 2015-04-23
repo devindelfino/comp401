@@ -4,7 +4,7 @@ Project 05: Julia Sets
 
 Description
 -----------
-Using [Mathematica](https://www.wolfram.com/mathematica/), I visualized plots representing various [Julia Sets](http://en.wikipedia.org/wiki/Julia_set). Saving these plots as svg files, I was able to etch the fractal on wood using a laser cutter.
+Using python and Matplotlib, I visualized plots representing various [Julia Sets](http://en.wikipedia.org/wiki/Julia_set). Saving these plots as svg files, I was able to etch the fractal on wood using a laser cutter.
 
 Taking a small region of the complex plane centered around the origin, we break it up into a series of points. For each complex point z, we apply the equation z = z^2 + c, where c is another complex number x + yi, for a certain number of iterations. While we are applying this function, z will either remain small or diverge towards infinity. If we iterate this function over each complex point in our region, and plot only the points that remain stable during the iteration, we get a nice fractal image.
 
