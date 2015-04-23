@@ -15,10 +15,9 @@ function main()
 	% c_real = -0.755
 	% c_imag = 0.05
 
-	range_real = 2;
-	range_imag = 2;
-	incr_real = 0.01;
-	incr_imag = 0.01;
+	bound = 2;
+	incr = 0.01;
 
-	makeJuliaFractal(c_real, c_imag, range_real, range_imag, incr_real, incr_imag);
+	makeJuliaFractal(c_real, c_imag, bound, incr);
+
 end

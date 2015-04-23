@@ -15,7 +15,7 @@ def make_complex(real, imag):
 #endfunction
 
 def julia(z, c, n):
-	lim = 10^100
+	lim = 2
 	it = 0
 	jpoint = z
 	while((it < n)):
@@ -38,7 +38,7 @@ def make_julia_fractal(c_real, c_imag, range_real, range_imag, incr_real, incr_i
 	reals = list(np.arange(-range_real, range_real, incr_real))
 	imaginaries = list(np.arange(-range_imag, range_imag, incr_imag))
 
-	complex_points = make_complex(reals,imaginaries)
+	# complex_points = make_complex(reals,imaginaries)
 	# print complex_points
 	julia_real = [0 for x in range(len(reals)*len(imaginaries))]
 	julia_imag = [0 for x in range(len(reals)*len(imaginaries))]
@@ -47,19 +47,20 @@ def make_julia_fractal(c_real, c_imag, range_real, range_imag, incr_real, incr_i
 	it = 0
 	for row in range(0,len(reals)):
 		for col in range(0,len(imaginaries)):
-			juliapoint = julia(complex_points[row][col], c, iterations)
+			complex_point = complex(reals[row],imaginaries[col])
+			juliapoint = julia(complex_point, c, iterations)
 			# print juliapoint
 			if(abs(juliapoint) <= 2 ):
-				julia_real[it] = juliapoint.real
-				julia_imag[it] = juliapoint.imag
+				julia_real[it] = complex_point.real
+				julia_imag[it] = complex_point.imag
 			it = it + 1
 		#endfor
 	#endfor
 	print "plotting julia set\n"
-	fig = plt.figure()
-	ax = fig.add_subplot(111, aspect="equal")
-	ax.plot(julia_real, julia_imag,'.')
-	# plt.scatter(julia_real, julia_imag,s=0.001)
+	# fig = plt.figure()
+	# ax = fig.add_subplot(111, aspect="equal")
+	# ax.plot(julia_real, julia_imag,'.')
+	plt.scatter(julia_real, julia_imag,s=0.001)
 	plt.xlim(-2, 2)
   	plt.ylim(-2, 2)
   	plt.show()
@@ -84,8 +85,8 @@ def main():
 	# c_imag = 0.05
 	range_real = 2
 	range_imag = 2
-	incr_real = 0.01
-	incr_imag = 0.01
+	incr_real = 0.001
+	incr_imag = 0.001
 
 	make_julia_fractal(c_real, c_imag, range_real, range_imag, incr_real, incr_imag)
 #endmain
