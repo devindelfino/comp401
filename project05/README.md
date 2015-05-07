@@ -12,9 +12,9 @@ Contents
 --------
 
 In the *project05/* directory:
-* *juliaFractalPlot.nb* - Mathematica functions that plot Julia Sets
+* *julia.py* - python script that plots julia sets. This is the most effective working version.
 * *JuliaSetSVGs/* - Directory containing some saved SVG images of Julia Sets
-* *python_version/* - Directory containing a python implementation of the code (it works, but the plotting is much slower than the Mathematica implementation).
+* *mathematica_version/* - Directory containing a mathematica implementation of the code.
 * *matlab_version* - Directory containing a matlab implementation of the code (currently does not work).
 
 References

@@ -66,7 +66,7 @@ def make_julia_fractal(c_real, c_imag, range_real, range_imag, incr_real, incr_i
   	plt.axis('off')
 
   	# plt.show()
-  	plt.savefig('juliatest.png',format='png')
+  	plt.savefig('julia5.png',format='png')
   	print "done."
 
 #endfunction
@@ -80,8 +80,17 @@ def main():
 	# c_real = -0.81
 	# c_imag = -0.1795
 
-	c_real = -0.04
-	c_imag = -0.684
+	# julia 3
+	# c_real = -0.04
+	# c_imag = -0.684
+
+	# julia 4
+	# c_real = 0.28
+	# c_imag = 0.008
+
+	# julia 5
+	c_real = -0.835
+	c_imag = -0.2321
 
 	# c_real = -0.755
 	# c_imag = 0.05
